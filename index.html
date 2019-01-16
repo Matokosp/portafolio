@@ -5,36 +5,68 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0" />
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<!-- GOOGLE FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700|Work+Sans:700" rel="stylesheet">
+	<!-- FLEXSLIDER -->
+    <link rel="stylesheet" href="assets/css/flexslider.css" type="text/css" media="screen" />
+	<!-- MY STYLE -->
+	<link rel="stylesheet" href="assets/css/menu.css" />
 	<link rel="stylesheet" href="assets/css/style.css" />
 	<!-- <link rel="shortcut icon" href="assets/ico/favicon.ico" /> -->
 	<title></title>
 </head>
 <body>
+	<nav class="menu">
+		<div class="menu__responsive">
+	    	<div class="menu__responsive--hidden" id="menu-hide">
+		        <a href="index.html">
+		          <img class="menu_responsive-logo" src="assets/images/m-logo.png">
+		        </a>
+		        <ul class="menures">
+		            <li><a href="#me">me</a></li>        
+		            <li><a href="#work">work</a></li>
+		            <li><a href="#photography">photography</a></li>
+		            <li><a href="#contact"><h4>contact</h4></a></li>
+		        </ul>
+	    	</div>
+		    <div class="hamburger__section" id="hamburger">
+	       		<div class="hamburger__section-icon"></div>
+	       		<div class="hamburger__section-icon" id="menuicon-middle"></div>
+	       		<div class="hamburger__section-icon"></div>
+	    	</div>
+		</div>
+		<section class="main_menu">
+			<ul>
+				<li><a href="#home" data-target="content-01">home</a></li>
+				<li><a href="#me" data-target="content-02">me</a></li>
+				<li><a href="#work" data-target="content-03">work</a></li>
+				<li><a href="#photography" data-target="content-04">photography</a></li>
+				<li><a href="#contact" data-target="content-05">contact</a></li>
+			</ul>
+		</section>
+	</nav>
 
-	<nav class="main_menu">
+<!-- 	<nav class="main_menu">
 		<ul>
 			<li><a href="#" data-target="content-01">home</a></li>
 			<li><a href="#" data-target="content-02">me</a></li>
-			<li><a href="#" data-target="content-03">web</a></li>
+			<li><a href="#" data-target="content-03">work</a></li>
 			<li><a href="#" data-target="content-04">photography</a></li>
 			<li><a href="#" data-target="content-05">contact</a></li>
 		</ul>
-	</nav>
+	</nav> -->
 
 	<section class="content-01">content 01</section>
-	<section class="content-02">content 02</section>
+	<section class="content-02 snap">content 02</section>
 	<section class="content-03">content 03</section>
 	<section class="content-04">content 04</section>
 	<section class="content-05">content 05</section>
-	<section class="content-06">content 06</section>
-	<section class="content-07">content 07</section>
-	<section class="content-08">content 08</section>
-	<section class="content-09">content 09</section>
-	<section class="content-10">content 10</section>
 		
 	<!-- this is where we put our custom functions -->
 	<script src="assets/js/lib/jquery-3.1.0.min.js"></script>
 	<script src="assets/js/lib/jquery-scroll-snap.js"></script>
+	<script defer src="assets/js/jquery.flexslider.js"></script>
+	<script defer src="assets/js/myscript.js"></script>
 	<script>
 
 		var windowHeight = $(window).innerWidth();

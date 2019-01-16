@@ -19,7 +19,7 @@ a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, f
 
 body { 
   line-height: 1.5;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Muli', sans-serif;
 }
 
 caption, th, td { 
@@ -44,6 +44,12 @@ a img {
 }
 
 
+
+h2 {
+  font-family: 'Work Sans', sans-serif;
+}
+
+
 [class^="content"] {
   height: 100vh;
   display: flex;
@@ -62,7 +68,11 @@ a img {
   position: fixed;
   width: 100%;
   padding: 10px;
-  background-color: yellow;
+  text-align: right;
+}
+
+.main_menu ul {
+  margin-right: 3vw;
 }
 
 .main_menu ul li {
@@ -70,7 +80,11 @@ a img {
 }
 
 .main_menu ul li a {
-  background: yellow;
+  font-size: 0.8em;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
   text-decoration: none;
   margin: 0 10px; 
 }
