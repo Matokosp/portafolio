@@ -1,0 +1,59 @@
+@media (min-width: 992px) {
+
+.slider__home-secondary {
+	display: block;
+	padding: 0;
+  	border: none;
+  	float: right;
+}
+
+.slider__home {
+	float: right;
+}
+
+.home__content {
+  width: auto;
+  height: 100vh;
+  padding: 0;
+  padding-top: 30vh;
+}
+
+.home__content img {
+  display: block;
+  margin: 0 auto 70px auto;
+  width: 90px;
+}
+
+.home__content h2 {
+  color: #000;
+  font-size: 3.5em;
+  line-height: 1em;
+}
+
+.content-01 h4:nth-child(4) {
+  top: 25vh;
+  left: 8vw;
+  color: #000;
+  transform: rotate(-90deg);
+}
+
+.content-01 h4:nth-child(5) {
+  bottom: 70px;
+  right: none;
+  left: 8vw;
+  color: #000;
+}
+
+.yellow-square {
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	top: 0px;
+	left: 0px;
+	background-color: #EABE24;
+}
+
+
+
+
+}
