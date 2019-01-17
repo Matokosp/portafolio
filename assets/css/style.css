@@ -17,6 +17,10 @@ a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, f
   vertical-align: baseline;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body { 
   line-height: 1.5;
   font-family: 'Muli', sans-serif;
@@ -48,6 +52,8 @@ a img {
 h2 {
   font-family: 'Work Sans', sans-serif;
 }
+
+/*HOME*/
 
 .row {
   margin: 0;
@@ -158,3 +164,71 @@ h2 {
   bottom: 20px;
 }
 
+
+/*ME*/
+
+.content-02 {
+  width: 100%;
+  height: 100vh;
+}
+
+.me__section {
+  display: none;
+}
+
+.me__section--responsive {
+  background-image: url(../images/me-responsive.jpg);
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  background-position: center center;
+}
+
+.timeline {
+  padding-top: 30vh;
+}
+
+.timeline__event {
+  margin-bottom: 50px;
+}
+
+.timeline__block {
+  display: inline-block;
+  background-color: #fff;
+  width: 30px;
+  height: 6px;
+}
+
+.timeline__block span {
+  font-size: 0.8em;
+  display: inline-block;
+  position: relative;
+  color: #fff;
+  font-weight: 600;
+  top: -20px;
+  left: 35px;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+
+.timeline__text {
+  padding-top: 10vh;
+}
+
+.timeline__text-title {
+  height: 20vh;
+}
+
+.timeline__text-title h3 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.4em;
+}
+
+.timeline__text p {
+  font-size: 0.8em;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 300;
+  margin-bottom: 50px;
+}

@@ -53,7 +53,37 @@
 	background-color: #EABE24;
 }
 
+.me__section--responsive {
+	display: none;
+}
+
+#myVideo {
+  position: relative;
+  top: 0px;
+  width: 100%;
+  height: 100vh;
+  background-size: 100% 100%;
+  background-color: black;
+  background-position: center center;
+  background-size: contain;
+  object-fit: cover;
+  z-index:3;
+  margin: 0;
+  padding: 0;
+}
 
 
+
+
+
+
+}
+
+
+@media (min-width: 1920px) {
+
+#myVideo {
+  top: 0px;
+}
 
 }
