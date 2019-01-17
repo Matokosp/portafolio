@@ -9,6 +9,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700|Work+Sans:700" rel="stylesheet">
 	<!-- FLEXSLIDER -->
     <link rel="stylesheet" href="assets/css/flexslider.css" type="text/css" media="screen" />
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<!-- MY STYLE -->
 	<link rel="stylesheet" href="assets/css/menu.css" />
 	<link rel="stylesheet" href="assets/css/style.css" />
@@ -19,8 +21,8 @@
 	<nav class="menu">
 		<div class="menu__responsive">
 	    	<div class="menu__responsive--hidden" id="menu-hide">
-		        <a href="index.html">
-		          <img class="menu_responsive-logo" src="assets/images/m-logo.png">
+		        <a href="#home">
+		          <img class="menu__responsive-logo" src="assets/images/m-logo.png">
 		        </a>
 		        <ul class="menures">
 		            <li><a href="#me">me</a></li>        
@@ -37,54 +39,62 @@
 		</div>
 		<section class="main_menu">
 			<ul>
-				<li><a href="#home" data-target="content-01">home</a></li>
-				<li><a href="#me" data-target="content-02">me</a></li>
-				<li><a href="#work" data-target="content-03">work</a></li>
-				<li><a href="#photography" data-target="content-04">photography</a></li>
-				<li><a href="#contact" data-target="content-05">contact</a></li>
+				<li><a href="#home">home</a></li>
+				<li><a href="#me">me</a></li>
+				<li><a href="#work">work</a></li>
+				<li><a href="#photography">photography</a></li>
+				<li><a href="#contact">contact</a></li>
 			</ul>
 		</section>
 	</nav>
 
-<!-- 	<nav class="main_menu">
-		<ul>
-			<li><a href="#" data-target="content-01">home</a></li>
-			<li><a href="#" data-target="content-02">me</a></li>
-			<li><a href="#" data-target="content-03">work</a></li>
-			<li><a href="#" data-target="content-04">photography</a></li>
-			<li><a href="#" data-target="content-05">contact</a></li>
-		</ul>
-	</nav> -->
-
-	<section class="content-01">content 01</section>
-	<section class="content-02 snap">content 02</section>
-	<section class="content-03">content 03</section>
-	<section class="content-04">content 04</section>
-	<section class="content-05">content 05</section>
+	<section class="content-01 row" id="home">
+		<div class="flexslider slider__home col-sm-12 col-md-3">
+			<ul class="slides">
+				<li class="home__slide slide-1"></li>
+				<li class="home__slide slide-3"></li>
+				<li class="home__slide slide-5"></li>
+				<li class="home__slide slide-2"></li>
+				<li class="home__slide slide-4"></li>
+				<li class="home__slide slide-6"></li>
+			</ul>
+        </div>
+        <div class="flexslider slider__home-secondary col-md-3">
+			<ul class="slides">
+				<li class="home__slide slide-2"></li>
+				<li class="home__slide slide-4"></li>
+				<li class="home__slide slide-6"></li>
+				<li class="home__slide slide-1"></li>
+				<li class="home__slide slide-3"></li>
+				<li class="home__slide slide-5"></li>
+			</ul>
+        </div>
+        <div class="home__content">
+        	<h2>Hi, <br>
+        		I'm Matias, <br>
+        		Designer.</h2>
+        	<h4>MATIASSALINAS</h4>
+        	<h4>GRAPHIC DESIGN - WEB DEVELOPMENT</h4>
+        </div>
+	</section>
+	<section class="content-02 snap" id="me">content 02</section>
+	<section class="content-03" id="work">content 03</section>
+	<section class="content-04" id="photography">content 04</section>
+	<section class="content-05" id="contact">content 05</section>
 		
-	<!-- this is where we put our custom functions -->
-	<script src="assets/js/lib/jquery-3.1.0.min.js"></script>
-	<script src="assets/js/lib/jquery-scroll-snap.js"></script>
+
+
+	<!-- <script src="assets/js/lib/jquery-3.1.0.min.js"></script> -->
+	<!-- jQuery -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+
+	<!-- FlexSlider -->
 	<script defer src="assets/js/jquery.flexslider.js"></script>
+	<!-- BOOTSTRAP -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<script src="assets/js/lib/jquery-scroll-snap.js"></script>
 	<script defer src="assets/js/myscript.js"></script>
-	<script>
-
-		var windowHeight = $(window).innerWidth();
-
-		function scrollToClass(aid) {
-			var aTag = $('.' + aid)
-			$('html, body').animate({ scrollTop: aTag.offset().top }, 'slow')
-		}
-		
-		$(".main_menu ul li a").on('click', function() {	
-			var target = $(this).attr('data-target')
-			scrollToClass(target)
-		})
-
-		$(function(){
-			$( '.snap' ).scrollSnap()
-		})
-
-	</script>
 </body>
 </html>

@@ -49,46 +49,93 @@ h2 {
   font-family: 'Work Sans', sans-serif;
 }
 
+.row {
+  margin: 0;
+}
 
-[class^="content"] {
+.content-01 {
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  font-size: 3rem;
-
+  position: relative;
 }
 
-[class^="content"]:nth-child(2n) {
-  background-color: salmon;
+.slider__home {
+  padding: 0;
+  border: none;
 }
 
-.main_menu {
-  position: fixed;
+.slider__home-secondary {
+  display: none;
+}
+
+.flex-direction-nav a {
+  display: none;
+}
+
+.flex-control-nav {
+  display: none;
+}
+
+.home__slide {
+  background-size: cover;
+  height: 100vh;
+  background-position: center center;
+}
+
+.slide-1 {
+  background-image: url('../images/home-slide-1.jpg');
+}
+.slide-2 {
+  background-image: url('../images/home-slide-2.jpg');
+}
+.slide-3 {
+  background-image: url('../images/home-slide-3.jpg');
+}
+.slide-4 {
+  background-image: url('../images/home-slide-4.jpg');
+}
+.slide-5 {
+  background-image: url('../images/home-slide-5.jpg');
+}
+.slide-6 {
+  background-image: url('../images/home-slide-6.jpg');
+}
+
+.home__content {
+  position: absolute;
+  z-index: 4;
   width: 100%;
-  padding: 10px;
-  text-align: right;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  padding: 40vh 10vw 0 10vw;
+  box-sizing: border-box;
 }
 
-.main_menu ul {
-  margin-right: 3vw;
-}
-
-.main_menu ul li {
-  display: inline-block;
-}
-
-.main_menu ul li a {
-  font-size: 0.8em;
-  letter-spacing: 3px;
-  font-weight: 600;
+.home__content h2 {
   color: #fff;
-  text-transform: uppercase;
-  text-decoration: none;
-  margin: 0 10px; 
+  font-size: 2.8em;
+  line-height: 1em;
 }
 
+.home__content h4:nth-child(2) {
+  position: absolute;
+  top: 20vh;
+  left: -5vw;
+  letter-spacing: 4px;
+  color: #fff;
+  font-size: 0.7em;
+  line-height: 1em;
+  transform: rotate(-90deg);
+}
 
-
+.home__content h4:nth-child(3) {
+  position: absolute;
+  top: 65vh;
+  right: -35vw;
+  letter-spacing: 4px;
+  color: #fff;
+  font-size: 0.7em;
+  line-height: 1em;
+  transform: rotate(-90deg);
+}
 
