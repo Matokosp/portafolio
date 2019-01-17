@@ -118,6 +118,11 @@
 #menu {
   z-index: 99;
 }
+
+.main_menu ul li a {
+  font-size: 0.8em;
+}
+
 }
 
 

@@ -168,8 +168,25 @@ h2 {
 /*ME*/
 
 .content-02 {
+  position: relative;
   width: 100%;
   height: 100vh;
+}
+
+.section__square-white {
+  position: absolute;
+  top: 10vh;
+  left: 10vw;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.section__square-white h2 {
+  padding-top: 5px;
+  font-size: 1.3em;
 }
 
 .me__section {
@@ -182,6 +199,7 @@ h2 {
   height: 100vh;
   width: 100%;
   background-position: center center;
+  position: absolute;
 }
 
 .timeline {

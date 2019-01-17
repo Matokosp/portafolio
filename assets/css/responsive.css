@@ -57,33 +57,91 @@
 	display: none;
 }
 
+.me__section {
+	height: 100vh;
+	width: 100%;
+	background-color: ;
+	display: block;
+	position: absolute;
+	z-index: -1;
+}
+
 #myVideo {
-  position: relative;
-  top: 0px;
   width: 100%;
-  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   background-size: 100% 100%;
-  background-color: black;
+  background-color: white;
   background-position: center center;
   background-size: contain;
-  object-fit: cover;
-  z-index:3;
+ /* object-fit: cover;*/
+  z-index:-1;
   margin: 0;
   padding: 0;
 }
 
+.section__square-white {
+  width: 70px;
+  height: 70px;
+  left: 8.3vw;
+}
 
+.section__square-white h2 {
+  padding-top: 10px;
+  font-size: 2.6em;
+}
 
+.timeline {
+  padding-top: 40vh;
+}
 
+.timeline__event {
+  margin-bottom: 80px;
+}
 
+.timeline__block span {
+  font-size: 1em;
+}
+
+.timeline__text {
+  padding-top: 10vh;
+}
+
+.timeline__text-title {
+  height: 20vh;
+}
+
+.timeline__text-title h3 {
+  font-size: 2.2em;
+}
+
+.timeline__text p {
+	font-size: 1em;
+  	margin-bottom: 80px;
+}
 
 }
 
 
-@media (min-width: 1920px) {
+@media (min-width: 1200px) {
 
-#myVideo {
-  top: 0px;
+.timeline__text {
+  padding-top: 20vh;
+}
+
+.timeline__text-title {
+  height: 20vh;
+}
+
+}
+
+@media (min-width: 1440px) {
+
+.timeline {
+  padding-top: 45vh;
+}
+
+.timeline__text {
+  padding-top: 25vh;
 }
 
 }

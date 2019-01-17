@@ -81,43 +81,45 @@
     	<div class="home__content-circle"></div>
     	<div class="yellow-square"></div>
 	</section>
-	<section class="content-02 snap" id="me">
-		<div class="me__section--responsive row">
-			<div class="timeline col-xs-3 col-xs-offset-1">
-				<div class="timeline__event">
-					<div class="timeline__block">
-						<span>1993</span>
-					</div>
-				</div>
-				<div class="timeline__event">
-					<div class="timeline__block">
-						<span>2017</span>
-					</div>
-				</div>
-				<div class="timeline__event">
-					<div class="timeline__block">
-						<span>2018</span>
-					</div>
+	<section class="content-02 snap row" id="me">
+		<div class="section__square-white">
+			<h2>M</h2>
+		</div>
+		<div class="me__section--responsive"></div>
+		<div class="me__section">
+			<video autoplay muted loop src="assets/images/reel.mp4" id="myVideo" "></video>
+		</div>
+		<div class="timeline col-xs-3 col-xs-offset-1 col-sm-2 col-md-1">
+			<div class="timeline__event">
+				<div class="timeline__block">
+					<span>1993</span>
 				</div>
 			</div>
-			<div class="timeline__text col-xs-8">
-				<div class="timeline__text-title">
-					<h3>I'm Matias, a freelance <br>
-					developer & designer.</h3>
+			<div class="timeline__event">
+				<div class="timeline__block">
+					<span>2017</span>
 				</div>
-				<p>Born Santiago, CHILE.</p>
-				<p>BDesign Graduate School</p>
-				<p>Front-End Bootcamp in Desafío Latam developers academy
-					<br><br>
-					External consultant in Zooma Diseño, design studio
-					based in Santiago, Chile.
-					<br><br>
-					Freelancer experience in cooperation with several agenies,
-					companies and professionals from Chile.</p>
+			</div>
+			<div class="timeline__event">
+				<div class="timeline__block">
+					<span>2018</span>
+				</div>
 			</div>
 		</div>
-		<div class="me__section" style="height: 100vh; background-color: salmon;">
-			<video autoplay muted loop src="assets/images/reel.mp4" id="myVideo" "></video>
+		<div class="timeline__text col-xs-8 col-md-6 col-lg-4">
+			<div class="timeline__text-title">
+				<h3>I'm Matias, a freelance <br>
+				developer & designer.</h3>
+			</div>
+			<p>Born Santiago, CHILE.</p>
+			<p>Design Graduate School</p>
+			<p>Front-End Bootcamp in Desafío Latam developers academy
+				<br><br>
+				External consultant in Zooma Diseño, design studio
+				based in Santiago, Chile.
+				<br><br>
+				Freelancer experience in cooperation with several agenies,
+				companies and professionals from Chile.</p>
 		</div>
 	</section>
 	<section class="content-03" id="work">content 03</section>
@@ -130,6 +132,19 @@
 	<!-- jQuery -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+
+	<script type="text/javascript">
+  		// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+		let vh = window.innerHeight * 0.01;
+		// Then we set the value in the --vh custom property to the root of the document
+		document.documentElement.style.setProperty('--vh', `${vh}px`);
+		// We listen to the resize event
+		window.addEventListener('resize', () => {
+		  // We execute the same script as before
+		  let vh = window.innerHeight * 0.01;
+		  document.documentElement.style.setProperty('--vh', `${vh}px`);
+		});
+	</script>
 
 	<!-- FlexSlider -->
 	<script defer src="assets/js/jquery.flexslider.js"></script>
