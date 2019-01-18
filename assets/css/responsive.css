@@ -35,6 +35,7 @@
   left: 8vw;
   color: #000;
   transform: rotate(-90deg);
+  font-size: 0.6em;
 }
 
 .content-01 h4:nth-child(5) {
@@ -42,15 +43,7 @@
   right: none;
   left: 8vw;
   color: #000;
-}
-
-.yellow-square {
-	position: absolute;
-	height: 50px;
-	width: 50px;
-	top: 0px;
-	left: 0px;
-	background-color: #EABE24;
+  font-size: 0.6em;
 }
 
 .me__section--responsive {
@@ -60,10 +53,10 @@
 .me__section {
 	height: 100vh;
 	width: 100%;
-	background-color: ;
 	display: block;
 	position: absolute;
 	z-index: -1;
+	overflow: hidden;
 }
 
 #myVideo {
@@ -73,21 +66,21 @@
   background-color: white;
   background-position: center center;
   background-size: contain;
- /* object-fit: cover;*/
+  object-fit: cover;
+
   z-index:-1;
   margin: 0;
   padding: 0;
 }
 
 .section__square-white {
-  width: 70px;
-  height: 70px;
-  left: 8.3vw;
+  width: 60px;
+  height: 60px;
 }
 
 .section__square-white h2 {
-  padding-top: 10px;
-  font-size: 2.6em;
+  padding-top: 8px;
+  font-size: 2.4em;
 }
 
 .timeline {
@@ -115,8 +108,28 @@
 }
 
 .timeline__text p {
-	font-size: 1em;
+	font-size: 0.8em;
   	margin-bottom: 80px;
+}
+
+/*SKILLS*/
+
+.rose-square {
+  width: 60px;
+  height: 60px;
+}
+
+.rose-square h2 {
+  padding-top: 8px;
+  font-size: 2.4em;
+}
+
+.skills__text {
+  padding-top: 25vh;
+}
+
+.skills__text h3 {
+  font-size: 2.2em;
 }
 
 }
@@ -132,6 +145,18 @@
   height: 20vh;
 }
 
+.skills__cat_item-list {
+  color: #CC6E5C;
+  transform: translateY(-90px);
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.skills__cat_item:hover .skills__cat_item-list {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
 }
 
 @media (min-width: 1440px) {
@@ -142,6 +167,14 @@
 
 .timeline__text {
   padding-top: 25vh;
+}
+
+.timeline__text-title h3 {
+  font-size: 2.5em;
+}
+
+.skills__text h3 {
+  font-size: 2.5em;
 }
 
 }

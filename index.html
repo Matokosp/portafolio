@@ -19,115 +19,184 @@
 	<title></title>
 </head>
 <body>
-	<nav class="menu">
-		<div class="menu__responsive">
-	    	<div class="menu__responsive--hidden" id="menu-hide">
-		        <a href="#home">
-		          <img class="menu__responsive-logo" src="assets/images/logo.png">
-		        </a>
-		        <ul class="menures">
-		            <li><a href="#me">me</a></li>        
-		            <li><a href="#work">work</a></li>
-		            <li><a href="#photography">photography</a></li>
-		            <li><a href="#contact"><h4>contact</h4></a></li>
-		        </ul>
-	    	</div>
-		    <div class="hamburger__section" id="hamburger">
-	       		<div class="hamburger__section-icon"></div>
-	       		<div class="hamburger__section-icon" id="menuicon-middle"></div>
-	       		<div class="hamburger__section-icon"></div>
-	    	</div>
-		</div>
-		<section class="main_menu">
-			<ul>
-				<li><a href="#home">home</a></li>
-				<li><a href="#me">me</a></li>
-				<li><a href="#work">work</a></li>
-				<li><a href="#photography">photography</a></li>
-				<li><a href="#contact">contact</a></li>
-			</ul>
-		</section>
-	</nav>
+	<div class="mi-contenedor">
+		<nav class="menu">
+			<div class="menu__responsive">
+		    	<div class="menu__responsive--hidden" id="menu-hide">
+			        <a href="#home">
+			          <img class="menu__responsive-logo" src="assets/images/logo.png">
+			        </a>
+			        <ul class="menures">
+			            <li><a href="#me">me</a></li>        
+			            <li><a href="#work">work</a></li>
+			            <li><a href="#photography">photography</a></li>
+			            <li><a href="#contact"><h4>contact</h4></a></li>
+			        </ul>
+		    	</div>
+			    <div class="hamburger__section" id="hamburger">
+		       		<div class="hamburger__section-icon"></div>
+		       		<div class="hamburger__section-icon" id="menuicon-middle"></div>
+		       		<div class="hamburger__section-icon"></div>
+		    	</div>
+			</div>
+			<section class="main_menu">
+				<div class="corner__square">
+					<h3></h3>
+				</div>
+				<ul>
+					<li><a href="#home">home</a></li>
+					<li><a href="#me">me</a></li>
+					<li><a href="#work">work</a></li>
+					<li><a href="#photography">photography</a></li>
+					<li><a href="#contact">contact</a></li>
+				</ul>
+			</section>
+		</nav>
 
-	<section class="content-01 row" id="home">
-		<div class="flexslider slider__home col-sm-12 col-md-3">
-			<ul class="slides">
-				<li class="home__slide slide-1"></li>
-				<li class="home__slide slide-3"></li>
-				<li class="home__slide slide-5"></li>
-				<li class="home__slide slide-2"></li>
-				<li class="home__slide slide-4"></li>
-				<li class="home__slide slide-6"></li>
-			</ul>
-        </div>
-        <div class="flexslider slider__home-secondary col-md-3">
-			<ul class="slides">
-				<li class="home__slide slide-2"></li>
-				<li class="home__slide slide-4"></li>
-				<li class="home__slide slide-6"></li>
-				<li class="home__slide slide-1"></li>
-				<li class="home__slide slide-3"></li>
-				<li class="home__slide slide-5"></li>
-			</ul>
-        </div>
-        <div class="home__content col-md-offset-2 col-md-3">
-        	<img src="assets/images/logo.png">
-        	<h2>Hi, <br>
-        		I'm Matias, <br>
-        		Designer.</h2>
-        </div>
-        <h4>MATIASSALINAS</h4>
-    	<h4>GRAPHIC DESIGN - WEB DEVELOPMENT</h4>
-    	<div class="home__content-circle"></div>
-    	<div class="yellow-square"></div>
-	</section>
-	<section class="content-02 snap row" id="me">
-		<div class="section__square-white">
-			<h2>M</h2>
-		</div>
-		<div class="me__section--responsive"></div>
-		<div class="me__section">
-			<video autoplay muted loop src="assets/images/reel.mp4" id="myVideo" "></video>
-		</div>
-		<div class="timeline col-xs-3 col-xs-offset-1 col-sm-2 col-md-1">
-			<div class="timeline__event">
-				<div class="timeline__block">
-					<span>1993</span>
+		<section class="content-01 row" id="home">
+			<div class="flexslider slider__home col-sm-12 col-md-3">
+				<ul class="slides">
+					<li class="home__slide slide-1"></li>
+					<li class="home__slide slide-2"></li>
+					<li class="home__slide slide-3"></li>
+					<!-- <li class="home__slide slide-2"></li>
+					<li class="home__slide slide-4"></li>
+					<li class="home__slide slide-6"></li> -->
+				</ul>
+	        </div>
+	        <div class="flexslider slider__home-secondary col-md-3">
+				<ul class="slides">
+					<li class="home__slide slide-1-1"></li>
+					<li class="home__slide slide-2-2"></li>
+					<li class="home__slide slide-3-3"></li>
+					<!-- <li class="home__slide slide-1"></li>
+					<li class="home__slide slide-3"></li>
+					<li class="home__slide slide-5"></li> -->
+				</ul>
+	        </div>
+	        <div class="home__content col-md-offset-2 col-md-3">
+	        	<img src="assets/images/logo.png">
+	        	<h2>Hi, <br>
+	        		I'm Matias, <br>
+	        		Designer.</h2>
+	        </div>
+	        <h4>MATIASSALINAS</h4>
+	    	<h4>GRAPHIC DESIGN - WEB DEVELOPMENT</h4>
+	    	<div class="home__content-circle"></div>
+		</section>
+		<section class="content-02 snap" id="me">
+			<div class="section__square-white">
+				<h2>M</h2>
+			</div>
+			<div class="me__section--responsive"></div>
+			<div class="me__section">
+				<video autoplay muted loop class="embed-responsive-item" src="assets/images/reel.mp4" id="myVideo" "></video>
+			</div>
+			<div class="row timeline__row">
+				<div class="timeline col-xs-3 col-xs-offset-1 col-sm-2 col-md-1">
+					<div class="timeline__event">
+						<div class="timeline__block">
+							<span>1993</span>
+						</div>
+					</div>
+					<div class="timeline__event">
+						<div class="timeline__block">
+							<span>2017</span>
+						</div>
+					</div>
+					<div class="timeline__event">
+						<div class="timeline__block">
+							<span>2018</span>
+						</div>
+					</div>
+				</div>
+				<div class="timeline__text col-xs-8 col-md-6 col-lg-4">
+					<div class="timeline__text-title">
+						<h3>I'm Matias, a freelance <br>
+						developer & designer.</h3>
+					</div>
+					<p>Born Santiago, CHILE.</p>
+					<p>Design Graduate School</p>
+					<p>Front-End Bootcamp in Desafío Latam developers academy
+						<br><br>
+						External consultant in Zooma Diseño, design studio
+						based in Santiago, Chile.
+						<br><br>
+						Freelancer experience in cooperation with several agenies,
+						companies and professionals from Chile.</p>
 				</div>
 			</div>
-			<div class="timeline__event">
-				<div class="timeline__block">
-					<span>2017</span>
+			<div class="row skills">
+				<div class="rose-square">
+					<h2>S</h2>
 				</div>
-			</div>
-			<div class="timeline__event">
-				<div class="timeline__block">
-					<span>2018</span>
+				<div class="skills__text col-xs-offset-1 col-xs-10 col-md-offset-2 col-md-5">
+					<h3>Skills</h3>
+					<p>The area that I enjoy the most is front-end web development,
+						taking a close approach with the client in order to bring
+						his vision to the design.
+						<br><br>
+						As a designer I’m insterested in graphic solutions and
+						visual information, which comes in handy for the web
+						design process aswell. Some of my work also includes
+						branding for companies or campaigns.
+						<br><br>
+						As a side passion of mine, I’ve come to develop an
+						interest in portrait photography, especially the ones
+						placed in urban environments.</p>
 				</div>
+				<div class="skills__cat col-xs-offset-1 col-xs-10 col-md-2">
+					<div class="skills__cat_item">
+						<img src="assets/images/design-icon.png">
+						<br>
+						<h4>design</h4>						
+						<ul class="skills__cat_item-list">
+							<li>Illustrator</li>
+							<li>Photoshop</li>
+							<li>Lightroom</li>
+							<li>After Effects</li>
+						</ul>						
+					</div>
+					<div class="skills__cat_item">
+						<img src="assets/images/web-icon.png">
+						<br>
+						<h4>web</h4>
+						<ul class="skills__cat_item-list">
+							<li>HTML</li>
+							<li>CSS</li>
+							<li>jQuery</li>
+							<li>Wordpress</li>
+						</ul>
+					</div>
+					<div class="skills__cat_item">
+						<img src="assets/images/photo-icon.png">
+						<br>
+						<h4>photography</h4>
+					</div>
+				</div>					
 			</div>
-		</div>
-		<div class="timeline__text col-xs-8 col-md-6 col-lg-4">
-			<div class="timeline__text-title">
-				<h3>I'm Matias, a freelance <br>
-				developer & designer.</h3>
-			</div>
-			<p>Born Santiago, CHILE.</p>
-			<p>Design Graduate School</p>
-			<p>Front-End Bootcamp in Desafío Latam developers academy
-				<br><br>
-				External consultant in Zooma Diseño, design studio
-				based in Santiago, Chile.
-				<br><br>
-				Freelancer experience in cooperation with several agenies,
-				companies and professionals from Chile.</p>
-		</div>
-	</section>
-	<section class="content-03" id="work">content 03</section>
-	<section class="content-04" id="photography">content 04</section>
-	<section class="content-05" id="contact">content 05</section>
+		</section>
+		<section class="content-03" id="work">
+			<div class="row work__section">
+				<div class="work__label">
+					<h4>web development<br>
+					ui / design / coding</h4>
+				</div>
+				<div class="col-md-offset-1 col-md-9 work__cat">
+					<h3>My Work.</h3>
+					<div class="work__item">
+						
+					</div>
+				</div>
+			</div>		
+		</section>
+
+
+		<!-- <section class="content-04" id="photography">content 04</section>
+		<section class="content-05" id="contact">content 05</section> -->
 		
 
-
+	</div>
 	<!-- <script src="assets/js/lib/jquery-3.1.0.min.js"></script> -->
 	<!-- jQuery -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>

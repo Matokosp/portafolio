@@ -85,10 +85,22 @@
 }
 
 .main_menu {
+  position: relative;
   display: block;
   width: 100%;
   padding: 10px;
   text-align: right;
+  background-color: #fff;
+  box-shadow: 0 1px 50 black;
+}
+
+.corner__square {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50px;
+  background-color: #EABE24;
 }
 
 .main_menu ul {
@@ -100,10 +112,10 @@
 }
 
 .main_menu ul li a {
-  font-size: 0.7em;
+  color: #000;
+  font-size: 0.6em;
   letter-spacing: 3px;
   font-weight: 600;
-  color: #fff;
   text-transform: uppercase;
   text-decoration: none;
   margin: 0 15px; 
@@ -120,7 +132,7 @@
 }
 
 .main_menu ul li a {
-  font-size: 0.8em;
+  font-size: 0.7em;
 }
 
 }
