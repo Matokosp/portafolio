@@ -1,3 +1,15 @@
+@media (min-width: 768px) {
+
+.work__item {
+  display: inline-block;
+  width: 48%;
+  float: left;
+  margin: 1% 1%;
+}
+
+}
+
+
 @media (min-width: 992px) {
 
 .slider__home-secondary {
@@ -73,56 +85,15 @@
   padding: 0;
 }
 
-.section__square-white {
-  width: 60px;
-  height: 60px;
-}
-
-.section__square-white h2 {
-  padding-top: 8px;
-  font-size: 2.4em;
-}
-
 .timeline {
-  padding-top: 40vh;
+  padding-top: 25vh;
 }
 
-.timeline__event {
-  margin-bottom: 80px;
-}
-
-.timeline__block span {
-  font-size: 1em;
-}
-
-.timeline__text {
-  padding-top: 10vh;
-}
-
-.timeline__text-title {
-  height: 20vh;
-}
-
-.timeline__text-title h3 {
-  font-size: 2.2em;
-}
-
-.timeline__text p {
-	font-size: 0.8em;
-  	margin-bottom: 80px;
+.timeline__event_block {
+  width: 15px;
 }
 
 /*SKILLS*/
-
-.rose-square {
-  width: 60px;
-  height: 60px;
-}
-
-.rose-square h2 {
-  padding-top: 8px;
-  font-size: 2.4em;
-}
 
 .skills__text {
   padding-top: 25vh;
@@ -132,46 +103,62 @@
   font-size: 2.2em;
 }
 
+.skills__cat_item-title {
+  font-size: 1.1em;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.skills__cat_item-logo {
+  width: 80px;
+  height: 80px;
+  padding-top: 20px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
 }
 
 
-@media (min-width: 1200px) {
+@media (min-width: 1020px) {
 
-.timeline__text {
-  padding-top: 20vh;
-}
-
-.timeline__text-title {
-  height: 20vh;
+body {
+  font-size: 13px;
 }
 
 .skills__cat_item-list {
-  color: #CC6E5C;
-  transform: translateY(-90px);
-  transition: 0.5s;
+  position: absolute;
+  top: -10px;
+  right: -60px;
+  -webkit-transition: 0.8s ease-in-out;
+  transition: 0.8s ease-in-out;
   opacity: 0;
 }
 
 .skills__cat_item:hover .skills__cat_item-list {
-  transform: translateY(0px);
+  transition-delay: 0.2s;
+  right: -100px;
   opacity: 1;
 }
+
+.skills__cat_item:hover .skills__cat_item-title {
+  transform: translateY(-60px) translateX(60px) rotate(-90deg);
+}
+
+.skills__cat_item:hover .skills__cat_item-logo {
+  background-color: #E27761;
+}
+
+/*WORK*/
+
+.work__item {
+  width: 31.3%;
+}
+
 
 }
 
 @media (min-width: 1440px) {
-
-.timeline {
-  padding-top: 45vh;
-}
-
-.timeline__text {
-  padding-top: 25vh;
-}
-
-.timeline__text-title h3 {
-  font-size: 2.5em;
-}
 
 .skills__text h3 {
   font-size: 2.5em;

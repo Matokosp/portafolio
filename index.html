@@ -15,6 +15,7 @@
 	<link rel="stylesheet" href="assets/css/menu.css" />
 	<link rel="stylesheet" href="assets/css/style.css" />
 	<link rel="stylesheet" href="assets/css/responsive.css" />
+	<link rel="stylesheet" href="assets/css/tablet.css" />
 	<!-- <link rel="shortcut icon" href="assets/ico/favicon.ico" /> -->
 	<title></title>
 </head>
@@ -85,51 +86,50 @@
 	    	<div class="home__content-circle"></div>
 		</section>
 		<section class="content-02 snap" id="me">
-			<div class="section__square-white">
-				<h2>M</h2>
-			</div>
 			<div class="me__section--responsive"></div>
 			<div class="me__section">
 				<video autoplay muted loop class="embed-responsive-item" src="assets/images/reel.mp4" id="myVideo" "></video>
 			</div>
-			<div class="row timeline__row">
-				<div class="timeline col-xs-3 col-xs-offset-1 col-sm-2 col-md-1">
-					<div class="timeline__event">
-						<div class="timeline__block">
-							<span>1993</span>
-						</div>
-					</div>
-					<div class="timeline__event">
-						<div class="timeline__block">
-							<span>2017</span>
-						</div>
-					</div>
-					<div class="timeline__event">
-						<div class="timeline__block">
-							<span>2018</span>
-						</div>
+			<div class="timeline">
+				<div class="row timeline__title">
+					<div class="col-xs-offset-3 col-md-offset-2">
+						<h3>I'm Matias, a freelance <br>
+							developer & designer.</h3>
 					</div>
 				</div>
-				<div class="timeline__text col-xs-8 col-md-6 col-lg-4">
-					<div class="timeline__text-title">
-						<h3>I'm Matias, a freelance <br>
-						developer & designer.</h3>
+				<div class="row timeline__event">
+					<div class="col-xs-3 col-md-offset-1 col-md-1 timeline__event_date">
+						<div class="timeline__event_block"></div>
+						<span>1993</span>
 					</div>
-					<p>Born Santiago, CHILE.</p>
-					<p>Design Graduate School</p>
-					<p>Front-End Bootcamp in Desafío Latam developers academy
-						<br><br>
-						External consultant in Zooma Diseño, design studio
-						based in Santiago, Chile.
-						<br><br>
-						Freelancer experience in cooperation with several agenies,
+					<div class="col-xs-7 col-md-5 timeline__event_description">
+						<p>Born Santiago, CHILE.</p>
+					</div>
+				</div>
+				<div class="row timeline__event">
+					<div class="col-xs-3 col-md-offset-1 col-md-1 timeline__event_date">
+						<div class="timeline__event_block"></div>
+						<span>2017</span>
+					</div>
+					<div class="col-xs-7 col-md-5 timeline__event_description">
+						<p>Design Graduate School</p>
+					</div>
+				</div>
+				<div class="row timeline__event">
+					<div class="col-xs-3 col-md-offset-1 col-md-1 timeline__event_date">
+						<div class="timeline__event_block"></div>
+						<span>2018</span>
+					</div>
+					<div class="col-xs-7 col-md-5 timeline__event_description">
+						<p>Front-End Bootcamp in Desafío Latam developers academy</p>
+						<p>External consultant in Zooma Diseño, design studio
+						based in Santiago, Chile.</p>
+						<p>Freelancer experience in cooperation with several agenies,
 						companies and professionals from Chile.</p>
+					</div>
 				</div>
 			</div>
 			<div class="row skills">
-				<div class="rose-square">
-					<h2>S</h2>
-				</div>
 				<div class="skills__text col-xs-offset-1 col-xs-10 col-md-offset-2 col-md-5">
 					<h3>Skills</h3>
 					<p>The area that I enjoy the most is front-end web development,
@@ -147,9 +147,10 @@
 				</div>
 				<div class="skills__cat col-xs-offset-1 col-xs-10 col-md-2">
 					<div class="skills__cat_item">
-						<img src="assets/images/design-icon.png">
-						<br>
-						<h4>design</h4>						
+						<div class="skills__cat_item-logo">
+							<img src="assets/images/design-icon-white.png">
+						</div>
+						<h4 class="skills__cat_item-title">design</h4>						
 						<ul class="skills__cat_item-list">
 							<li>Illustrator</li>
 							<li>Photoshop</li>
@@ -158,9 +159,10 @@
 						</ul>						
 					</div>
 					<div class="skills__cat_item">
-						<img src="assets/images/web-icon.png">
-						<br>
-						<h4>web</h4>
+						<div class="skills__cat_item-logo">
+							<img src="assets/images/web-icon-white.png">
+						</div>
+						<h4 class="skills__cat_item-title">web</h4>
 						<ul class="skills__cat_item-list">
 							<li>HTML</li>
 							<li>CSS</li>
@@ -169,9 +171,10 @@
 						</ul>
 					</div>
 					<div class="skills__cat_item">
-						<img src="assets/images/photo-icon.png">
-						<br>
-						<h4>photography</h4>
+						<div class="skills__cat_item-logo">
+							<img src="assets/images/photo-icon-white.png">
+						</div>
+						<h4 class="skills__cat_item-title">photography</h4>
 					</div>
 				</div>					
 			</div>
@@ -182,11 +185,27 @@
 					<h4>web development<br>
 					ui / design / coding</h4>
 				</div>
-				<div class="col-md-offset-1 col-md-9">
+				<div class="col-xs-offset-1 col-xs-10">
 					<h3>My Work.</h3>
-					<div class="work__item">
-						
-					</div>
+					<figure class="work__item">
+						<img class="img-responsive" src="assets/images/project-buo.jpg">
+						<figcaption>
+							<h4>Event Planner Company based in Santiago, Chile since 2008</h4>
+							<a href="http://buo.cl/">GO!</a>
+						</figcaption>
+					</figure>
+					<figure class="work__item">
+						<img class="img-responsive" src="assets/images/project-akbar.jpg">
+					</figure>
+					<figure class="work__item">
+						<img class="img-responsive" src="assets/images/project-zooma.jpg">
+					</figure>
+					<figure class="work__item">
+						<img class="img-responsive" src="assets/images/project-arisens.jpg">
+					</figure>
+					<figure class="work__item">
+						<img class="img-responsive" src="assets/images/project-vectrum.jpg">
+					</figure>
 				</div>
 			</div>		
 		</section>

@@ -1,0 +1,46 @@
+/*IPAD PRO*/
+
+/* Portrait */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+.slider__home {
+  width: 40vw;
+}
+
+.slider__home-secondary {
+  display: none;
+}
+
+.me__section {
+  display: none;
+}
+
+.me__section--responsive {
+  display: block;
+  background-image: url(../images/me-responsive.jpg);
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  background-position: center center;
+  position: absolute;
+  z-index: -1;
+}
+
+.timeline {
+  padding-top: 40vh;
+}
+
+/*SKILLS*/
+
+.skills__text {
+    padding-top: 15vh;
+}
+
+
+}
