@@ -398,3 +398,19 @@ h3 {
 .work__item:hover .work__item_caption {
   opacity: 1;
 }
+
+/*MY MASONRY*/
+
+#photo__grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid-sizer, .photo__grid_item, .photo__grid_item--width2 {
+  width: 100%;
+}
+
+.photo__grid_item {
+  float: left;
+}

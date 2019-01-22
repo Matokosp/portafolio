@@ -265,6 +265,14 @@
 						</figcaption>
 					</figure>
 				</div>
+			</div>
+			<div class="work__cat">
+				<div id="photo__grid">
+				  <div class="grid-sizer"></div>
+				  <div class="photo__grid_item"></div>
+				  <div class="photo__grid_item photo__grid_item--width2"></div>
+				  ...
+				</div>
 			</div>	
 		</section>
 
@@ -292,6 +300,18 @@
 		});
 	</script>
 
+	<!-- MASONRY -->
+	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+	<script type="text/javascript">
+		$(function(){
+				$('#photo__grid').masonry({
+				// options
+				itemSelector : '.item',
+				columnWidth : '.grid-sizer',
+				percentPosition : true
+				});
+			});
+	</script>
 	<!-- FlexSlider -->
 	<script defer src="assets/js/jquery.flexslider.js"></script>
 	<!-- BOOTSTRAP -->
