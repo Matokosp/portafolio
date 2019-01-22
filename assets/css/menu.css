@@ -142,6 +142,8 @@
 
 @media (min-width: 1440px) {
 
-
+.main_menu {
+  padding: 5px;
+}
 
 }

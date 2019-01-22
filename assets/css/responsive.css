@@ -54,7 +54,7 @@
   left: 8vw;
   color: #000;
   transform: rotate(-90deg);
-  font-size: 0.6em;
+  font-size: 0.7em;
 }
 
 .content-01 h4:nth-child(5) {
@@ -62,7 +62,7 @@
   right: none;
   left: 8vw;
   color: #000;
-  font-size: 0.6em;
+  font-size: 0.7em;
 }
 
 .me__section--responsive {
@@ -103,7 +103,7 @@
 /*SKILLS*/
 
 .skills__text {
-  padding-top: 25vh;
+  padding-top: 15vh;
 }
 
 .skills__text h3 {
@@ -136,7 +136,7 @@
 @media (min-width: 1020px) {
 
 body {
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .skills__cat_item-list {
@@ -162,6 +162,10 @@ body {
   background-color: #E27761;
 }
 
+.work__cat {
+  margin-top: 100px;
+}
+
 /*WORK*/
 
 .work__item {
@@ -172,6 +176,14 @@ body {
 }
 
 @media (min-width: 1440px) {
+
+body {
+  font-size: 16px;
+}
+
+.skills__text {
+  padding-top: 15vh;
+}
 
 .skills__text h3 {
   font-size: 2.5em;
