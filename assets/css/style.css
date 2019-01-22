@@ -196,7 +196,6 @@ h3 {
 .content-02 {
   position: relative;
   width: 100%;
- /* height: 100vh;*/
 }
 
 .me__section {
@@ -225,6 +224,7 @@ h3 {
 .timeline__title h3 {
   color: #fff;
   font-weight: 700;
+  font-size: 1.6em;
 }
 
 .timeline__event {
@@ -319,6 +319,17 @@ h3 {
 
 /*MY WORK*/
 
+.content-03 {
+  padding: 80px 0;
+}
+
+.content-03 h3 {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 2.5em;
+  margin: 0 0 70px 8.3vw;
+
+}
+
 .work__cat {
   position: relative;
   margin-top: 50px;
@@ -333,13 +344,6 @@ h3 {
   text-align: right;
   right: 8.3vw;
   top: -20px;
-}
-
-.content-03 h3 {
-  font-family: 'Work Sans', sans-serif;
-  font-size: 2.5em;
-  margin: 0 0 70px 8.3vw;
-
 }
 
 .work__item {
@@ -402,7 +406,6 @@ h3 {
 /*MY MASONRY*/
 
 #photo__grid {
-  background-color: #F1F1F2;
   margin-top: 20px;
 }
 
@@ -422,4 +425,88 @@ h3 {
 
 .photo__grid_item img {
   display: block;
+}
+
+/*CONTACT*/
+
+.content-04 {
+  background-color: #000;
+  margin-top: 80px;
+  padding: 60px 0;
+}
+
+.content-04 h3 {
+    font-family: 'Work Sans', sans-serif;
+    color: #fff;
+    font-size: 2.5em;
+    margin: 0px 0 20px 0;
+    text-align: center;
+}
+
+.contact__info {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.contact__info h4 {
+  margin-top: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+.contact__info a {
+  font-size: 0.8em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+
+.form__section {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.form__section h4 {
+  margin-bottom: 15px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+.form__input {
+  width: 100%;
+  margin: 5px 0;
+  height: 40px;
+  background-color: #eee;
+  border: none;
+}
+
+.contact__form textarea {
+  margin: 5px 0;
+  width: 100%;
+  background-color: #eee;
+  border: none;
+}
+
+.form__input-btn {
+  background-color: #E9BD24;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+  font-size: 0.9em;
+  color: #fff;
+  padding: 5px 10px;
+}
+
+.favorite__cafe h4 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+  margin: 15px;
 }
