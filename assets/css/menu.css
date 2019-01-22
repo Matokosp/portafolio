@@ -95,13 +95,32 @@
   box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
 }
 
-.corner__square {
+#corner__square {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 40px;
+  padding: 8px 12px 8px 8px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+#corner__square h3 {
+  color: #fff;
+  font-weight: 700;
+}
+
+.corner__square-yellow {
   background-color: #EABE24;
+}
+
+.corner__square-rose {
+  background-color: #E27761;
+}
+
+.corner__square-lightblue {
+  background-color: #72A4BA;
 }
 
 .main_menu ul {
@@ -118,8 +137,17 @@
   letter-spacing: 3px;
   font-weight: 600;
   text-transform: uppercase;
+  margin: 0 15px;
+  transition: 0.3s ease-in;
+}
+
+.main_menu ul li a:hover {
+  font-weight: 700;
   text-decoration: none;
-  margin: 0 15px; 
+}
+
+.active {
+  text-decoration: line-through;
 }
 
 }

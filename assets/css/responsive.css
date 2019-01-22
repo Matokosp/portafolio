@@ -189,6 +189,12 @@ body {
   width: 31.3%;
 }
 
+/*CONTACT*/
+
+.content-04 {
+  height: calc(var(--vh, 1vh) * 100);
+}
+
 
 }
 

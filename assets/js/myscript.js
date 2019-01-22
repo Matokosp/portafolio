@@ -129,16 +129,52 @@
 
 	// SCROLL ANIMATIONS
 
-	var meTop = $('#me').offset().top
+	var square = $('#corner__square');
+	var home = $('#home').offset();
+	var me = $('#me').offset();
+	var work = $('#work').offset();
+	var design = $('#design').offset();
+	var photography = $('#photography').offset();
+	var contact = $('#contact').offset();
+	var menu = $('#main_menu_ul');
+	var $window = $(window);
 
-	if (meTop === true) {
-		
-	}
+	$window.scroll(function() {
+		if ( $(window).scrollTop() >= home.top ) {
+			$(square).children('h3').text('');
+			$(square).removeClass().addClass('corner__square-yellow');
+			$(menu).children('li:nth-child(2)').children('a').removeClass('active');
+			$(menu).children('li:nth-child(1)').children('a').addClass('active');
+		}
+		if ( $(window).scrollTop() >= me.top ) {
+			$(square).children('h3').text('M');
+			$(square).removeClass().addClass('corner__square-rose');
+			$(menu).children('li:nth-child(1)').children('a').removeClass('active');
+			$(menu).children('li:nth-child(2)').children('a').addClass('active');
+			$(menu).children('li:nth-child(3)').children('a').removeClass('active');
+		}
+		if ( $(window).scrollTop() >= work.top ) {
+			$(square).children('h3').text('W');
+			$(square).removeClass().addClass('corner__square-lightblue');
+			$(menu).children('li:nth-child(2)').children('a').removeClass('active');
+			$(menu).children('li:nth-child(3)').children('a').addClass('active');
+			$(menu).children('li:nth-child(4)').children('a').removeClass('active');
+		}
+		if ( $(window).scrollTop() >= design.top ) {
+			$(square).children('h3').text('D');
+		}
+		if ( $(window).scrollTop() >= photography.top ) {
+			$(square).children('h3').text('P');
+			$(menu).children('li:nth-child(3)').children('a').removeClass('active');
+			$(menu).children('li:nth-child(4)').children('a').addClass('active');
+			$(menu).children('li:nth-child(5)').children('a').removeClass('active');
+		}
+		if ( $(window).scrollTop() >= contact.top ) {
+			$(square).children('h3').text('C');
+			$(square).removeClass().addClass('corner__square-yellow');
+			$(menu).children('li:nth-child(4)').children('a').removeClass('active');
+			$(menu).children('li:nth-child(5)').children('a').addClass('active');
+		}
+	});
+
 	
-		window.addEventListener('click', function(e){
-		// var menuHide = $('.menu-hide');
-		if (menuShow === true && e.target.className != 'menu__responsive--hidden show') {
-			desplazar();			
-		}		
-		console.log(e.target)
-	})
