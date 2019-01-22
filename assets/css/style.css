@@ -69,11 +69,11 @@ h3 {
   max-width: 2000px;
 }
 
-/*HOME*/
-
 .row {
   margin: 0;
 }
+
+/*HOME*/
 
 .content-01 {
   width: 100%;
@@ -401,16 +401,25 @@ h3 {
 
 /*MY MASONRY*/
 
+#photo__grid {
+  background-color: #F1F1F2;
+  margin-top: 20px;
+}
+
 #photo__grid:after {
   content: '';
   display: block;
   clear: both;
 }
 
-.grid-sizer, .photo__grid_item, .photo__grid_item--width2 {
+.grid-sizer, .photo__grid_item {
   width: 100%;
 }
 
 .photo__grid_item {
   float: left;
+}
+
+.photo__grid_item img {
+  display: block;
 }

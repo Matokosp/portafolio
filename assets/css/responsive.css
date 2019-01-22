@@ -7,6 +7,13 @@
   margin: 1% 1%;
 }
 
+/*MASONRY*/
+
+.grid-sizer, .photo__grid_item {
+  width: 50%;
+  padding: 5px;
+}
+
 }
 
 
@@ -117,6 +124,12 @@
   transition: 0.3s ease-in-out;
 }
 
+/*MASONRY*/
+
+.grid-sizer, .photo__grid_item {
+  width: 33.3%;
+}
+
 }
 
 
@@ -162,6 +175,12 @@ body {
 
 .skills__text h3 {
   font-size: 2.5em;
+}
+
+/*MASONRY*/
+
+.grid-sizer, .photo__grid_item {
+  width: 25%;
 }
 
 }

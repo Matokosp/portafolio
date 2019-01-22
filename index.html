@@ -267,11 +267,49 @@
 				</div>
 			</div>
 			<div class="work__cat">
-				<div id="photo__grid">
-				  <div class="grid-sizer"></div>
-				  <div class="photo__grid_item"></div>
-				  <div class="photo__grid_item photo__grid_item--width2"></div>
-				  ...
+				<div class="work__label">
+					<h4>photography</h4>
+				</div>
+				<div class="col-sm-offset-1 col-sm-10">
+					<div id="photo__grid">
+					  <div class="grid-sizer"></div>
+					  <div class="photo__grid_item">
+					  	<img class="img-responsive" src="assets/images/photo-1.jpg">
+					  </div>
+					  <div class="photo__grid_item">
+					  	<img class="img-responsive" src="assets/images/photo-2.jpg">
+					  </div>
+					  <div class="photo__grid_item">
+					  	<img class="img-responsive" src="assets/images/photo-12.jpg">
+					  </div>
+					  <div class="photo__grid_item">
+					  	<img class="img-responsive" src="assets/images/photo-3.jpg">
+					  </div>
+					  <div class="photo__grid_item">
+					  	<img class="img-responsive" src="assets/images/photo-4.jpg">
+					  </div>
+					  <div class="photo__grid_item">
+					  	<img class="img-responsive" src="assets/images/photo-11.jpg">
+					  </div>
+					  <div class="photo__grid_item">
+					  	<img class="img-responsive" src="assets/images/photo-5.jpg">
+					  </div>
+					  <div class="photo__grid_item">
+					  	<img class="img-responsive" src="assets/images/photo-6.jpg">
+					  </div>
+					  <div class="photo__grid_item">
+					  	<img class="img-responsive" src="assets/images/photo-7.jpg">
+					  </div>
+					  <div class="photo__grid_item">
+					  	<img class="img-responsive" src="assets/images/photo-8.jpg">
+					  </div>
+					  <div class="photo__grid_item">
+					  	<img class="img-responsive" src="assets/images/photo-9.jpg">
+					  </div>
+					  <div class="photo__grid_item">
+					  	<img class="img-responsive" src="assets/images/photo-10.jpg">
+					  </div>
+					</div>
 				</div>
 			</div>	
 		</section>
@@ -306,7 +344,7 @@
 		$(function(){
 				$('#photo__grid').masonry({
 				// options
-				itemSelector : '.item',
+				itemSelector : '.photo__grid_item',
 				columnWidth : '.grid-sizer',
 				percentPosition : true
 				});
