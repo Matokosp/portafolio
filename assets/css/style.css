@@ -477,22 +477,31 @@ h3 {
   font-weight: 700;
 }
 
-.form__input {
+.tab {
+  display: none;
+}
+
+.tab input {
   width: 100%;
   margin: 5px 0;
   height: 40px;
   background-color: #eee;
   border: none;
+  font-size: 0.6em;
+  padding-left: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px; 
 }
 
-.contact__form textarea {
-  margin: 5px 0;
-  width: 100%;
-  background-color: #eee;
-  border: none;
+.prevnext__section {
+  overflow: auto;
 }
 
-.form__input-btn {
+.prev__next_div {
+  float: right;
+}
+
+.prev__next_div button {
   background-color: #E9BD24;
   border: none;
   text-transform: uppercase;
@@ -501,6 +510,11 @@ h3 {
   font-size: 0.9em;
   color: #fff;
   padding: 5px 10px;
+}
+
+.steps__cont {
+  text-align:center;
+  margin-top:40px;
 }
 
 .favorite__cafe h4 {

@@ -60,9 +60,6 @@
 					<li class="home__slide slide-1"></li>
 					<li class="home__slide slide-2"></li>
 					<li class="home__slide slide-3"></li>
-					<!-- <li class="home__slide slide-2"></li>
-					<li class="home__slide slide-4"></li>
-					<li class="home__slide slide-6"></li> -->
 				</ul>
 	        </div>
 	        <div class="flexslider slider__home-secondary col-md-3">
@@ -70,9 +67,6 @@
 					<li class="home__slide slide-1-1"></li>
 					<li class="home__slide slide-2-2"></li>
 					<li class="home__slide slide-3-3"></li>
-					<!-- <li class="home__slide slide-1"></li>
-					<li class="home__slide slide-3"></li>
-					<li class="home__slide slide-5"></li> -->
 				</ul>
 	        </div>
 	        <div class="home__content col-md-offset-2 col-md-3">
@@ -324,13 +318,33 @@
 		        </div>          
 		        <div class="form__section col-xs-offset-1 col-xs-10 col-md-6">
 		            <h4>Contact Me</h4>
-		            <form class="contact__form" name="contactform" method="post" action="send_form_email.php">
-						<input class="form__input" placeholder="&nbsp;* Name" type="text" name="first_name" maxlength="50" size="">
-						<input class="form__input" placeholder="&nbsp;* Email" type="text" name="email" maxlength="50" size="">
-						<input class="form__input" placeholder="&nbsp;* About" type="text" name="about" maxlength="50" size="">
-						<input class="form__input" placeholder="&nbsp;&nbsp; Phone" type="text" name="telephone" maxlength="30" size="">
-						<textarea placeholder="&nbsp; * Message" name="comments" maxlength="1000" cols="" rows="6"></textarea>
-						<input class="form__input-btn" type="submit" value="Send"> 
+		            <form class="contact__form" id="contact__form" name="contactform" method="post" action="send_form_email.php">
+		            	<div class="tab">
+							<input placeholder="Name" type="text" name="first_name" oninput="this.className = ''">
+						</div>
+						<div class="tab">
+							<input placeholder="Email" type="text" name="email" oninput="this.className = ''">
+						</div>
+						<div class="tab">
+							<input placeholder="About (Web, Design, Photography)" type="text" name="about" oninput="this.className = ''">
+						</div>
+						<div class="tab">
+							<input placeholder="Phone" type="text" name="telephone" oninput="this.className = ''">
+						</div>
+						<div class="prevnext__section">
+							<div class="prev__next_div">
+								<button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+								<button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+							</div>
+						</div>
+
+						<div class="steps__cont">
+						  <span class="step"></span>
+						  <span class="step"></span>
+						  <span class="step"></span>
+						  <span class="step"></span>
+						</div>
+						<!-- <input class="form__input-btn" type="submit" value="Send">  -->
 		            </form>     
 		        </div>    
 	        </div>
