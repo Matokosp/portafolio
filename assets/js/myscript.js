@@ -177,4 +177,34 @@
 		}
 	});
 
+
+	// BOOK API
+	// $.ajax ({
+	// 	url: 'https://openlibrary.org/api/books?bibkeys=ISBN:0451526538&callback=mycallback&jscmd=data/',
+	// 	// dataType: 'json',
+	// 	method: 'GET'
+	// }).done(function (data) { 
+	// 	console.log(data);
+	// })
+
+	// var api_data = {
+	// 	url: 'https://openlibrary.org/api/books?bibkeys=ISBN:0451526538&jscmd=data',
+	// 	queryParams: ['jscmd=data'],
+	// 	// get_queryParams: function(){
+	// 	// 	return this.queryParams.join('&');
+
+	// 	// }
+	// }
+
+	$.ajax ({
+		url: 'https://openlibrary.org/api/books?bibkeys=ISBN:0451526538&jscmd=data',
+		// dataType: 'json',
+		method: 'GET'
+	}).done(function (data) {
+		console.log(data);
+	})
+
+	
+
+
 	
