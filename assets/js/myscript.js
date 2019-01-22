@@ -178,28 +178,24 @@
 	});
 
 
-	// BOOK API
-	// $.ajax ({
-	// 	url: 'https://openlibrary.org/api/books?bibkeys=ISBN:0451526538&callback=mycallback&jscmd=data/',
-	// 	// dataType: 'json',
-	// 	method: 'GET'
-	// }).done(function (data) { 
-	// 	console.log(data);
-	// })
 
-	// var api_data = {
-	// 	url: 'https://openlibrary.org/api/books?bibkeys=ISBN:0451526538&jscmd=data',
-	// 	queryParams: ['jscmd=data'],
-	// 	// get_queryParams: function(){
-	// 	// 	return this.queryParams.join('&');
+	// API
 
-	// 	// }
-	// }
+	var isbnNumber = $()
+
+	var api_data = {
+		url: 'https://openlibrary.org/api/books?bibkeys=ISBN',
+		code: isbnNumber,
+		queryParams: ['exclude=[minutely,hourly,daily,alerts,flags]', 'lang=es', 'units=si'],
+		get_queryParams: function(){
+			return this.queryParams.join('&')		
+		}
+	}
 
 	$.ajax ({
-		url: 'https://openlibrary.org/api/books?bibkeys=ISBN:0451526538&jscmd=data',
-		// dataType: 'json',
-		method: 'GET'
+		url: 'https://openlibrary.org/api/books?bibkeys=ISBN:9781784971571&format=json',
+		type: 'GET',
+		dataType: 'json'
 	}).done(function (data) {
 		console.log(data);
 	})
