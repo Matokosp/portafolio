@@ -370,29 +370,29 @@
 	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
 
 	<script type="text/javascript">
-  		// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
-		let vh = window.innerHeight * 0.01;
-		// Then we set the value in the --vh custom property to the root of the document
-		document.documentElement.style.setProperty('--vh', `${vh}px`);
-		// We listen to the resize event
-		window.addEventListener('resize', () => {
-		  // We execute the same script as before
-		  let vh = window.innerHeight * 0.01;
-		  document.documentElement.style.setProperty('--vh', `${vh}px`);
-		});
+  // 		// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+		// let vh = window.innerHeight * 0.01;
+		// // Then we set the value in the --vh custom property to the root of the document
+		// document.documentElement.style.setProperty('--vh', `${vh}px`);
+		// // We listen to the resize event
+		// window.addEventListener('resize', () => {
+		//   // We execute the same script as before
+		//   let vh = window.innerHeight * 0.01;
+		//   document.documentElement.style.setProperty('--vh', `${vh}px`);
+		// });
 	</script>
 
 	<!-- MASONRY -->
 	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
 	<script type="text/javascript">
-		$(function(){
-				$('#photo__grid').masonry({
-				// options
-				itemSelector : '.photo__grid_item',
-				columnWidth : '.grid-sizer',
-				percentPosition : true
-				});
-			});
+		// $(function(){
+		// 		$('#photo__grid').masonry({
+		// 		// options
+		// 		itemSelector : '.photo__grid_item',
+		// 		columnWidth : '.grid-sizer',
+		// 		percentPosition : true
+		// 		});
+		// 	});
 	</script>
 	<!-- FlexSlider -->
 	<script defer src="assets/js/jquery.flexslider.js"></script>
