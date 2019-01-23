@@ -138,7 +138,7 @@
   font-weight: 600;
   text-transform: uppercase;
   margin: 0 15px;
-  transition: 0.3s ease-in;
+  transition: 0.3s ease-in-out;
 }
 
 .main_menu ul li a:hover {

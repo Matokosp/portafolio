@@ -14,6 +14,24 @@
   padding: 5px;
 }
 
+/*FOOTER*/
+
+.my__misc {
+  margin-top: 40px;
+}
+
+.book__section img {
+  width: 100%;
+}
+
+.book__section h5 {
+  width: 100%;
+}
+
+.favorite__cafe {
+  margin-top: 0px;
+}
+
 }
 
 
@@ -192,9 +210,8 @@ body {
 /*CONTACT*/
 
 .content-04 {
-  height: calc(var(--vh, 1vh) * 100);
+  height: calc(var(--vh, 1vh) * 120);
 }
-
 
 }
 

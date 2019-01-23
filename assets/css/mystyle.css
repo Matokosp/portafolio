@@ -448,12 +448,12 @@ h3 {
   text-align: center;
 }
 
-.contact__info h4 {
+.contact__info h5 {
+  font-weight: 700;
   margin-top: 10px;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-weight: 700;
 }
 
 .contact__info a {
@@ -470,6 +470,7 @@ h3 {
 }
 
 .form__section h4 {
+  font-family: 'Work Sans', sans-serif;
   margin-bottom: 15px;
   color: #fff;
   text-transform: uppercase;
@@ -517,12 +518,52 @@ h3 {
   margin-top:40px;
 }
 
+.book__section {
+  text-align: center;
+  color: #fff;
+}
+
+.book__section h4 {
+  font-family: 'Work Sans', sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.book__section h5 {
+  background-color: #fff;
+  color: #000;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0 auto 10px auto;
+  padding: 5px;
+  width: 80%;
+}
+
+.book__section p {
+  letter-spacing: 3px;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.book__section img {
+  width: 80%;
+}
+
+.favorite__cafe {
+  margin-top: 30px;
+}
+
 .favorite__cafe h4 {
+  font-family: 'Work Sans', sans-serif;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 3px;
   text-align: center;
-  margin: 15px;
+  margin-bottom: 15px;
 }
 
 
