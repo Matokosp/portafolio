@@ -1,0 +1,528 @@
+/* -------------------------------------------------------------- 
+  
+   reset.css
+   * Resets default browser CSS.
+   
+-------------------------------------------------------------- */
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body { 
+  line-height: 1.5;
+  font-family: 'Muli', sans-serif;
+}
+
+caption, th, td { 
+	text-align: left; 
+	font-weight: normal; 
+}
+table, td, th { 
+	vertical-align: middle; 
+}
+
+/* Remove possible quote marks (") from <q>, <blockquote>. */
+blockquote:before, blockquote:after, q:before, q:after { 
+	content: ""; 
+}
+blockquote, q { 
+	quotes: "" ""; 
+}
+
+/* Remove annoying border on linked images. */
+a img { 
+	border: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+h2 {
+  font-family: 'Work Sans', sans-serif;
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+.mi-contenedor {
+  max-width: 2000px;
+}
+
+.row {
+  margin: 0;
+}
+
+/*HOME*/
+
+.content-01 {
+  width: 100%;
+  height: calc(var(--vh, 1vh) * 100);
+  position: relative;
+}
+
+.slider__home {
+  padding: 0;
+  border: none;
+}
+
+.slider__home-secondary {
+  display: none;
+}
+
+.flex-direction-nav a {
+  display: none;
+}
+
+.flex-control-nav {
+  display: none;
+}
+
+.home__slide {
+  background-size: cover;
+  height: 100vh;
+  background-position: center center;
+}
+
+/*.slide-1 {
+  background-image: url('../images/home-slide-1.jpg');
+}
+
+.slide-1-1 {
+  background-image: url('../images/home-slide-1-1.jpg');
+}
+.slide-2 {
+  background-image: url('../images/home-slide-2.jpg');
+}
+.slide-2-2 {
+  background-image: url('../images/home-slide-2-2.jpg');
+}
+.slide-3 {
+  background-image: url('../images/home-slide-3.jpg');
+}
+.slide-3-3 {
+  background-image: url('../images/home-slide-3-3.jpg');
+}*/
+/*.slide-4 {
+  background-image: url('../images/home-slide-4.jpg');
+}
+.slide-5 {
+  background-image: url('../images/home-slide-5.jpg');
+}
+.slide-6 {
+  background-image: url('../images/home-slide-6.jpg');
+}*/
+
+.home__content {
+  position: absolute;
+  z-index: 4;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  padding: 40vh 10vw 0 10vw;
+  box-sizing: border-box;
+}
+
+.home__content img {
+  display: none;
+}
+
+.home__content h2 {
+  color: #fff;
+  font-size: 2.8em;
+  line-height: 1em;
+}
+
+.content-01 h4:nth-child(4) {
+  position: absolute;
+  top: 30vh;
+  left: 10vw;
+  letter-spacing: 4px;
+  font-weight: 600;
+  color: #fff;
+  font-size: 0.7em;
+  line-height: 1em;
+  transform: rotate(-90deg);
+  transform-origin: bottom left;  
+}
+
+.content-01 h4:nth-child(5) {
+  position: absolute;
+  bottom: 70px;
+  right: -318px;
+  letter-spacing: 4px;
+  font-weight: 600;
+  color: #fff;
+  font-size: 0.7em;
+  line-height: 1em;
+  transform: rotate(-90deg);
+  transform-origin: bottom left;  
+}
+
+.home__content-circle {
+  width: 30px;
+  height: 30px;
+  border: 3px solid white;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+
+/*ME*/
+
+.content-02 {
+  position: relative;
+  width: 100%;
+}
+
+.me__section {
+  display: none;
+}
+
+.me__section--responsive {
+  background-image: url(../images/me-responsive.jpg);
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  background-position: center center;
+  position: absolute;
+  z-index: -1;
+}
+
+.timeline {
+  height: calc(var(--vh, 1vh) * 100);
+  padding-top: 20vh;
+}
+
+.timeline__title {
+  margin-bottom: 50px;
+}
+
+.timeline__title h3 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.6em;
+}
+
+.timeline__event {
+  margin-bottom: 40px;
+}
+
+.timeline__event_block {
+  display: inline-block;
+  background-color: #fff;
+  width: 30%;
+  height: 6px;
+}
+
+.timeline__event_date span {
+  display: inline-block;
+  color: #fff;
+  transform: rotate(-90deg) translateY(25px) translateX(4px);
+  transform-origin: bottom left;
+}
+
+.timeline__event_description {
+  color: #fff;
+  font-size: 0.9em;
+}
+
+.timeline__event_description p {
+  margin-bottom: 10px;
+}
+
+/*SKILLS*/
+
+.skills {
+  position: relative;
+}
+
+.skills__text {
+  padding-top: 5vh;
+}
+
+.skills__text h3 {
+  padding-bottom: 30px;
+  font-weight: 700;
+}
+
+.skills__text p {
+  font-size: 0.9em;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+
+.skills__cat { 
+  text-align: center;
+  padding: 50px 0;
+}
+
+.skills__cat_item {
+  margin-top: 30px;
+  position: relative;
+}
+
+.skills__cat_item img {
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+.skills__cat_item-title {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 700;
+  display: inline-block;
+  padding: 10px;
+  font-size: 1.2em;
+}
+
+.skills__cat_item-logo {
+  margin: 0 auto;
+  background-color: #000;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding-top: 30px;
+}
+
+.skills__cat_item-list {
+  margin-top: 15px;
+}
+
+.skills__cat_item-list li {
+  letter-spacing: 2px;
+  line-height: 1.3em;
+}
+
+/*MY WORK*/
+
+.content-03 {
+  padding: 80px 0;
+}
+
+.content-03 h3 {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 2.5em;
+  margin: 0 0 70px 8.3vw;
+
+}
+
+.work__cat {
+  position: relative;
+  margin-top: 50px;
+}
+
+.work__label h4 {
+  position: absolute;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 600;
+  font-size: 0.7em;
+  text-align: right;
+  right: 8.3vw;
+  top: -20px;
+}
+
+.work__item {
+  text-align: center;
+  position: relative;
+  margin: 20px 0;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.work__item img {
+  width: 100%;
+}
+
+.work__item_caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    background-color: #122C35;
+    opacity: 0;
+    -webkit-transition: .45s ease-in-out;
+    transition: .45s ease-in-out;
+}
+
+.work__item_caption h4 {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.work__item_caption a {
+  font-size: 1em;
+  font-weight: 400;
+  margin: 20px auto 0 auto;
+  padding: 5px 20px;
+  border: 2px solid white;
+  border-radius: 25px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.work__item_caption a:hover {
+  background-color: #fff;
+  text-decoration: none;
+  color: #122C35;
+  font-weight: 700;
+}
+
+.work__item:hover .work__item_caption {
+  opacity: 1;
+}
+
+/*MY MASONRY*/
+
+#photo__grid {
+  margin-top: 20px;
+}
+
+#photo__grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid-sizer, .photo__grid_item {
+  width: 100%;
+}
+
+.photo__grid_item {
+  float: left;
+}
+
+.photo__grid_item img {
+  display: block;
+}
+
+/*CONTACT*/
+
+.content-04 {
+  background-color: #000;
+  margin-top: 80px;
+  padding: 60px 0;
+}
+
+.content-04 h3 {
+    font-family: 'Work Sans', sans-serif;
+    color: #fff;
+    font-size: 2.5em;
+    margin: 0px 0 20px 0;
+    text-align: center;
+}
+
+.contact__info {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.contact__info h4 {
+  margin-top: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+.contact__info a {
+  font-size: 0.8em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+
+.form__section {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.form__section h4 {
+  margin-bottom: 15px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+.tab {
+  display: none;
+}
+
+.tab input {
+  width: 100%;
+  margin: 5px 0;
+  height: 40px;
+  background-color: #eee;
+  border: none;
+  font-size: 0.6em;
+  padding-left: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px; 
+}
+
+.prevnext__section {
+  overflow: auto;
+}
+
+.prev__next_div {
+  float: right;
+}
+
+.prev__next_div button {
+  background-color: #E9BD24;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+  font-size: 0.9em;
+  color: #fff;
+  padding: 5px 10px;
+}
+
+.steps__cont {
+  text-align:center;
+  margin-top:40px;
+}
+
+.favorite__cafe h4 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+  margin: 15px;
+}
+
+
