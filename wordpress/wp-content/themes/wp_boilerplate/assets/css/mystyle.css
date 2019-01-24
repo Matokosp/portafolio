@@ -27,24 +27,24 @@ body {
 }
 
 caption, th, td { 
-	text-align: left; 
-	font-weight: normal; 
+  text-align: left; 
+  font-weight: normal; 
 }
 table, td, th { 
-	vertical-align: middle; 
+  vertical-align: middle; 
 }
 
 /* Remove possible quote marks (") from <q>, <blockquote>. */
 blockquote:before, blockquote:after, q:before, q:after { 
-	content: ""; 
+  content: ""; 
 }
 blockquote, q { 
-	quotes: "" ""; 
+  quotes: "" ""; 
 }
 
 /* Remove annoying border on linked images. */
 a img { 
-	border: none;
+  border: none;
 }
 
 a {
@@ -104,7 +104,7 @@ h3 {
   background-position: center center;
 }
 
-/*.slide-1 {
+.slide-1 {
   background-image: url('../images/home-slide-1.jpg');
 }
 
@@ -122,7 +122,7 @@ h3 {
 }
 .slide-3-3 {
   background-image: url('../images/home-slide-3-3.jpg');
-}*/
+}
 /*.slide-4 {
   background-image: url('../images/home-slide-4.jpg');
 }
@@ -448,12 +448,12 @@ h3 {
   text-align: center;
 }
 
-.contact__info h4 {
+.contact__info h5 {
+  font-weight: 700;
   margin-top: 10px;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-weight: 700;
 }
 
 .contact__info a {
@@ -470,6 +470,7 @@ h3 {
 }
 
 .form__section h4 {
+  font-family: 'Work Sans', sans-serif;
   margin-bottom: 15px;
   color: #fff;
   text-transform: uppercase;
@@ -501,7 +502,12 @@ h3 {
   float: right;
 }
 
+button {
+  margin: 0;
+}
+
 .prev__next_div button {
+  display: inline;
   background-color: #E9BD24;
   border: none;
   text-transform: uppercase;
@@ -513,16 +519,55 @@ h3 {
 }
 
 .steps__cont {
-  text-align:center;
   margin-top:40px;
 }
 
+.book__section {
+  text-align: center;
+  color: #fff;
+}
+
+.book__section h4 {
+  font-family: 'Work Sans', sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.book__section h5 {
+  background-color: #fff;
+  color: #000;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0 auto 10px auto;
+  padding: 5px;
+  width: 80%;
+}
+
+.book__section p {
+  letter-spacing: 3px;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.book__section img {
+  width: 80%;
+}
+
+.favorite__cafe {
+  margin-top: 30px;
+}
+
 .favorite__cafe h4 {
+  font-family: 'Work Sans', sans-serif;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 3px;
   text-align: center;
-  margin: 15px;
+  margin-bottom: 15px;
 }
 
 

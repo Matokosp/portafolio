@@ -1,3 +1,12 @@
+	// CONTACT FORM INPUT
+
+	var contactInput = $('.form__section').children('.tab').children('input');
+
+	contactInput.on('input', function(){
+		this.className('');
+	})
+
+
 	// WINDOW VH
 
 	// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
@@ -90,7 +99,7 @@
 	  if (n == 0) {
 	    document.getElementById("prevBtn").style.display = "none";
 	  } else {
-	    document.getElementById("prevBtn").style.display = "inline";
+	    document.getElementById("prevBtn").style.display = "inline-block";
 	  }
 	  if (n == (x.length - 1)) {
 	    document.getElementById("nextBtn").innerHTML = "Submit";
@@ -208,17 +217,31 @@
 	
 	var api_data = {
 		url: 'https://openlibrary.org/api/books?bibkeys=ISBN:',
-		code: typeof book !== 'undefined' ? book : '9781784971571',
+		code: '9781784971571',
 		tipo: '&jscmd=data'
 	}
+
+
+	var bookTitle = '';
+	var bookAuthor = '';
+	var bookCover = '';
+	var title = $('book__section').children('h5');
+	var author = $('book__section').children('p');
+	var cover = $('book__section').children('img');
 
 	$.ajax ({
 		url: api_data.url + api_data.code +'&format=json'+ api_data.tipo,
 		type: 'GET',
 		dataType: 'jsonp'
 	}).done(function (data) {
+		bookTitle = data[0];
 		console.log(data);
+		console.log(bookTitle);
 	})
+
+	
+
+
 
 	
 

@@ -296,7 +296,10 @@ get_header() ?>
 		        </div>          
 		        <div class="form__section col-xs-offset-1 col-xs-10 col-md-6">
 		            <h4>Contact Me</h4>
-		            <form class="contact__form" id="contact__form" name="contactform" method="post" action="send_form_email.php">
+		            <?php if ( is_active_sidebar( 'contact-widget' ) ) { ?>
+						<?php dynamic_sidebar( 'contact-widget' ); ?>
+					<?php }; ?>
+		            <!-- <form class="contact__form" id="contact__form" name="contactform" method="post" action="send_form_email.php">
 		            	<div class="tab">
 							<input placeholder="Name" type="text" name="first_name" oninput="this.className = ''">
 						</div>
@@ -322,15 +325,14 @@ get_header() ?>
 						  <span class="step"></span>
 						  <span class="step"></span>
 						</div>
-						<!-- <input class="form__input-btn" type="submit" value="Send">  -->
-		            </form>     
+		            </form>  -->    
 		        </div>    
 	        </div>
 	        <div class="my__misc row">
 	        	<div class="book__section col-sm-offset-1 col-sm-3">
 	        		<h4>currently reading</h4>
-	        		<h5>The Three Body Problem</h5>
-	        		<p>by Cixin Liu</p>
+	        		<h5><!-- The Three Body Problem --></h5>
+	        		<p><!-- by Cixin Liu --></p>
 	        		<img src="assets/images/cover-1.jpg">
 	        	</div>
 	        	<div class="favorite__cafe col-sm-offset-1 col-sm-6">
