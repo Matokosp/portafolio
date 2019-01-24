@@ -314,10 +314,25 @@ get_header() ?>
 				<div class="col-sm-offset-1 col-sm-10">
 					<div id="photo__grid">
 					  <div class="grid-sizer"></div>
-					  <div class="photo__grid_item">
-					  	<img class="img-responsive" src="assets/images/photo-1.jpg">
-					  </div>
-					  <div class="photo__grid_item">
+					  <?php
+					  	$arg = array(
+					  		'post_type'		 => 'photography_post',
+					  		'posts_per_page' => 12,
+					  	);
+					  
+					  	$get_arg = new WP_Query( $arg );
+					  
+					  	while ( $get_arg->have_posts() ) {
+					  		$get_arg->the_post();
+					  	?>
+					  		
+							<div class="photo__grid_item">
+								<img class="img-responsive" src="<?php the_field('photography_img') ?>assets/images/photo-1.jpg">
+							</div>
+					  
+					  	<?php } wp_reset_postdata();
+					  ?>
+					  <!-- <div class="photo__grid_item">
 					  	<img class="img-responsive" src="assets/images/photo-2.jpg">
 					  </div>
 					  <div class="photo__grid_item">
@@ -349,7 +364,7 @@ get_header() ?>
 					  </div>
 					  <div class="photo__grid_item">
 					  	<img class="img-responsive" src="assets/images/photo-10.jpg">
-					  </div>
+					  </div> -->
 					</div>
 				</div>
 			</div>	
