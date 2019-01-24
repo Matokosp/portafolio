@@ -220,34 +220,6 @@ get_header() ?>
 					
 						<?php } wp_reset_postdata();
 					?>
-					<!-- <figure class="work__item">
-						<img class="img-responsive" src="assets/images/project-akbar.jpg">
-						<figcaption class="work__item_caption">
-							<h4>Chilean web development for International Tea company based in India, Akbar S.A</h4>
-							<a href="http://akbarchile.cl/">GO!</a>
-						</figcaption>
-					</figure>
-					<figure class="work__item">
-						<img class="img-responsive" src="assets/images/project-zooma.jpg">
-						<figcaption class="work__item_caption">
-							<h4>Design Studio based in Santiago, Chile.</h4>
-							<a href="http://zooma.cl/">GO!</a>
-						</figcaption>
-					</figure>
-					<figure class="work__item">
-						<img class="img-responsive" src="assets/images/project-arisens.jpg">
-						<figcaption class="work__item_caption">
-							<h4>Industrial robotic solutions for industries 4.0</h4>
-							<a href="https://www.arisens.cl/">GO!</a>
-						</figcaption>
-					</figure>
-					<figure class="work__item">
-						<img class="img-responsive" src="assets/images/project-vectrum.jpg">
-						<figcaption class="work__item_caption">
-							<h4>Water control systems for industries and housing</h4>
-							<a href="http://vectrum.cl/">GO!</a>
-						</figcaption>
-					</figure> -->
 				</div>
 			</div>
 			<div class="row work__cat" id="design">
@@ -269,42 +241,10 @@ get_header() ?>
 							
 							<figure class="work__item">
 								<img class="img-responsive" src="<?php the_field('design_project_img') ?>">
-								<!-- <figcaption class="work__item_caption">
-									<h4>Event Planner Company based in Santiago, Chile since 2008</h4>
-									<a href="http://buo.cl/">GO!</a>
-								</figcaption> -->
 							</figure>
 					
 						<?php } wp_reset_postdata();
 					?>
-					<!-- <figure class="work__item">
-						<img class="img-responsive" src="assets/images/project-akbar.jpg">
-						<figcaption class="work__item_caption">
-							<h4>Chilean web development for International Tea company based in India, Akbar S.A</h4>
-							<a href="http://akbarchile.cl/">GO!</a>
-						</figcaption>
-					</figure>
-					<figure class="work__item">
-						<img class="img-responsive" src="assets/images/project-zooma.jpg">
-						<figcaption class="work__item_caption">
-							<h4>Design Studio based in Santiago, Chile.</h4>
-							<a href="http://zooma.cl/">GO!</a>
-						</figcaption>
-					</figure>
-					<figure class="work__item">
-						<img class="img-responsive" src="assets/images/project-arisens.jpg">
-						<figcaption class="work__item_caption">
-							<h4>Industrial robotic solutions for industries 4.0</h4>
-							<a href="https://www.arisens.cl/">GO!</a>
-						</figcaption>
-					</figure>
-					<figure class="work__item">
-						<img class="img-responsive" src="assets/images/project-vectrum.jpg">
-						<figcaption class="work__item_caption">
-							<h4>Water control systems for industries and housing</h4>
-							<a href="http://vectrum.cl/">GO!</a>
-						</figcaption>
-					</figure> -->
 				</div>
 			</div>
 			<div class="row work__cat" id="photography">
@@ -327,48 +267,80 @@ get_header() ?>
 					  	?>
 					  		
 							<div class="photo__grid_item">
-								<img class="img-responsive" src="<?php the_field('photography_img') ?>assets/images/photo-1.jpg">
+								<img class="img-responsive" src="<?php the_field('photography_img') ?>">
 							</div>
 					  
 					  	<?php } wp_reset_postdata();
 					  ?>
-					  <!-- <div class="photo__grid_item">
-					  	<img class="img-responsive" src="assets/images/photo-2.jpg">
-					  </div>
-					  <div class="photo__grid_item">
-					  	<img class="img-responsive" src="assets/images/photo-12.jpg">
-					  </div>
-					  <div class="photo__grid_item">
-					  	<img class="img-responsive" src="assets/images/photo-3.jpg">
-					  </div>
-					  <div class="photo__grid_item">
-					  	<img class="img-responsive" src="assets/images/photo-4.jpg">
-					  </div>
-					  <div class="photo__grid_item">
-					  	<img class="img-responsive" src="assets/images/photo-11.jpg">
-					  </div>
-					  <div class="photo__grid_item">
-					  	<img class="img-responsive" src="assets/images/photo-5.jpg">
-					  </div>
-					  <div class="photo__grid_item">
-					  	<img class="img-responsive" src="assets/images/photo-6.jpg">
-					  </div>
-					  <div class="photo__grid_item">
-					  	<img class="img-responsive" src="assets/images/photo-7.jpg">
-					  </div>
-					  <div class="photo__grid_item">
-					  	<img class="img-responsive" src="assets/images/photo-8.jpg">
-					  </div>
-					  <div class="photo__grid_item">
-					  	<img class="img-responsive" src="assets/images/photo-9.jpg">
-					  </div>
-					  <div class="photo__grid_item">
-					  	<img class="img-responsive" src="assets/images/photo-10.jpg">
-					  </div> -->
 					</div>
 				</div>
 			</div>	
 		</section>
+		<footer class="content-04" id="contact">
+			<h3>Contact</h3>
+			<div class="row contact__section"> 
+		        <div class="contact__info col-xs-offset-1 col-xs-10 col-md-offset-1 col-md-3">
+		        	<?php if (have_posts()) { ?>
+		                <?php while(have_posts()) { ?>
+		                    <?php the_post(); ?>
+
+				            <h5>Email</h5>
+				            <a href="mailto:<?php the_field('contact_mail_link'); ?>"><?php the_field('contact_mail') ?></a>
+				            <!-- <a href="mailto:jmsalinas@design.com">jmsalinas@design.com</a> -->
+				            <h5>Phone</h5>
+				            <a href="tel:<?php the_field('contact_phone_link') ?>"><?php the_field('contact_phone') ?></a>
+				            <!-- <a href="tel:+56944139618">+569 4413 9618</a> -->
+
+		                <?php } ?>
+		        	<?php } ?>
+		        </div>          
+		        <div class="form__section col-xs-offset-1 col-xs-10 col-md-6">
+		            <h4>Contact Me</h4>
+		            <form class="contact__form" id="contact__form" name="contactform" method="post" action="send_form_email.php">
+		            	<div class="tab">
+							<input placeholder="Name" type="text" name="first_name" oninput="this.className = ''">
+						</div>
+						<div class="tab">
+							<input placeholder="Email" type="text" name="email" oninput="this.className = ''">
+						</div>
+						<div class="tab">
+							<input placeholder="About (Web, Design, Photography)" type="text" name="about" oninput="this.className = ''">
+						</div>
+						<div class="tab">
+							<input placeholder="Phone" type="text" name="telephone" oninput="this.className = ''">
+						</div>
+						<div class="prevnext__section">
+							<div class="prev__next_div">
+								<button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+								<button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+							</div>
+						</div>
+
+						<div class="steps__cont">
+						  <span class="step"></span>
+						  <span class="step"></span>
+						  <span class="step"></span>
+						  <span class="step"></span>
+						</div>
+						<!-- <input class="form__input-btn" type="submit" value="Send">  -->
+		            </form>     
+		        </div>    
+	        </div>
+	        <div class="my__misc row">
+	        	<div class="book__section col-sm-offset-1 col-sm-3">
+	        		<h4>currently reading</h4>
+	        		<h5>The Three Body Problem</h5>
+	        		<p>by Cixin Liu</p>
+	        		<img src="assets/images/cover-1.jpg">
+	        	</div>
+	        	<div class="favorite__cafe col-sm-offset-1 col-sm-6">
+	        		<h4>my current favorite <br> cafe / office</h4>
+					<div class="embed-responsive embed-responsive-16by9 map__footer">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13322.235706819381!2d-70.59778630657789!3d-33.408669680415336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf4161570681%3A0x8548090720bdbc33!2sD&#39;Fab+Food+Factory!5e0!3m2!1sen!2scl!4v1548123597097" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
+		        </div>
+	        </div>
+		</footer>
 </div>
 
 <?php get_footer() ?>
