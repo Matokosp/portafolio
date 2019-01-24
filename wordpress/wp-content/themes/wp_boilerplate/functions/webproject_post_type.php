@@ -1,15 +1,15 @@
 <?php
 
-if ( ! function_exists('timeline_post_type') ) {
+if ( ! function_exists('webproject_post_type') ) {
 
 // Register Custom Post Type
-function timeline_post_type() {
+function webproject_post_type() {
 
 	$labels = array(
-		'name'                  => _x( 'Events', 'Post Type General Name', 'text_domain' ),
-		'singular_name'         => _x( 'Event', 'Post Type Singular Name', 'text_domain' ),
-		'menu_name'             => __( 'Timeline Event', 'text_domain' ),
-		'name_admin_bar'        => __( 'Timeline Event', 'text_domain' ),
+		'name'                  => _x( 'Webs', 'Post Type General Name', 'text_domain' ),
+		'singular_name'         => _x( 'Web', 'Post Type Singular Name', 'text_domain' ),
+		'menu_name'             => __( 'Web Projects', 'text_domain' ),
+		'name_admin_bar'        => __( 'Web Projects', 'text_domain' ),
 		'archives'              => __( 'Item Archives', 'text_domain' ),
 		'attributes'            => __( 'Item Attributes', 'text_domain' ),
 		'parent_item_colon'     => __( 'Parent Item:', 'text_domain' ),
@@ -35,8 +35,8 @@ function timeline_post_type() {
 		'filter_items_list'     => __( 'Filter items list', 'text_domain' ),
 	);
 	$args = array(
-		'label'                 => __( 'Event', 'text_domain' ),
-		'description'           => __( 'Each event on the timeline', 'text_domain' ),
+		'label'                 => __( 'Web', 'text_domain' ),
+		'description'           => __( 'Web Projects', 'text_domain' ),
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
 		'taxonomies'            => array( 'category', 'post_tag' ),
@@ -45,7 +45,7 @@ function timeline_post_type() {
 		'show_ui'               => true,
 		'show_in_menu'          => true,
 		'menu_position'         => 5,
-		'menu_icon'             => 'dashicons-star-filled',
+		'menu_icon'             => 'dashicons-admin-site',
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,
@@ -54,9 +54,9 @@ function timeline_post_type() {
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
 	);
-	register_post_type( 'timeline_event', $args );
+	register_post_type( 'web_project', $args );
 
 }
-add_action( 'init', 'timeline_post_type', 0 );
+add_action( 'init', 'webproject_post_type', 0 );
 
 }

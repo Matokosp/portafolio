@@ -189,6 +189,171 @@ get_header() ?>
 				</div>					
 			</div>
 		</section>
+		<section class="content-03" id="work">
+			<h3>My Work.</h3>
+			<div class="row work__cat">
+				<div class="work__label">
+					<h4>web development<br>
+					ui / design / coding</h4>
+				</div>
+				<div class="col-xs-offset-1 col-xs-10">
+					<?php
+						$arg = array(
+							'post_type'		 => 'web_project',
+							'posts_per_page' => 9,
+						);
+					
+						$get_arg = new WP_Query( $arg );
+					
+						while ( $get_arg->have_posts() ) {
+							$get_arg->the_post();
+						?>						
+							
+							<figure class="work__item">
+								<img class="img-responsive" src="<?php the_field('web_project_img'); ?>">
+								<figcaption class="work__item_caption">
+									<h4><?php the_field('web_project_description') ?></h4>
+									<!-- <h4>Event Planner Company based in Santiago, Chile since 2008</h4> -->
+									<a href="<?php the_field('web_project_url') ?>">GO!</a>
+								</figcaption>
+							</figure>
+					
+						<?php } wp_reset_postdata();
+					?>
+					<!-- <figure class="work__item">
+						<img class="img-responsive" src="assets/images/project-akbar.jpg">
+						<figcaption class="work__item_caption">
+							<h4>Chilean web development for International Tea company based in India, Akbar S.A</h4>
+							<a href="http://akbarchile.cl/">GO!</a>
+						</figcaption>
+					</figure>
+					<figure class="work__item">
+						<img class="img-responsive" src="assets/images/project-zooma.jpg">
+						<figcaption class="work__item_caption">
+							<h4>Design Studio based in Santiago, Chile.</h4>
+							<a href="http://zooma.cl/">GO!</a>
+						</figcaption>
+					</figure>
+					<figure class="work__item">
+						<img class="img-responsive" src="assets/images/project-arisens.jpg">
+						<figcaption class="work__item_caption">
+							<h4>Industrial robotic solutions for industries 4.0</h4>
+							<a href="https://www.arisens.cl/">GO!</a>
+						</figcaption>
+					</figure>
+					<figure class="work__item">
+						<img class="img-responsive" src="assets/images/project-vectrum.jpg">
+						<figcaption class="work__item_caption">
+							<h4>Water control systems for industries and housing</h4>
+							<a href="http://vectrum.cl/">GO!</a>
+						</figcaption>
+					</figure> -->
+				</div>
+			</div>
+			<div class="row work__cat" id="design">
+				<div class="work__label">
+					<h4>design / branding</h4>
+				</div>
+				<div class="col-xs-offset-1 col-xs-10">
+					<?php
+						$arg = array(
+							'post_type'		 => 'design_project',
+							'posts_per_page' => 9,
+						);
+					
+						$get_arg = new WP_Query( $arg );
+					
+						while ( $get_arg->have_posts() ) {
+							$get_arg->the_post();
+						?>
+							
+							<figure class="work__item">
+								<img class="img-responsive" src="<?php the_field('design_project_img') ?>">
+								<!-- <figcaption class="work__item_caption">
+									<h4>Event Planner Company based in Santiago, Chile since 2008</h4>
+									<a href="http://buo.cl/">GO!</a>
+								</figcaption> -->
+							</figure>
+					
+						<?php } wp_reset_postdata();
+					?>
+					<!-- <figure class="work__item">
+						<img class="img-responsive" src="assets/images/project-akbar.jpg">
+						<figcaption class="work__item_caption">
+							<h4>Chilean web development for International Tea company based in India, Akbar S.A</h4>
+							<a href="http://akbarchile.cl/">GO!</a>
+						</figcaption>
+					</figure>
+					<figure class="work__item">
+						<img class="img-responsive" src="assets/images/project-zooma.jpg">
+						<figcaption class="work__item_caption">
+							<h4>Design Studio based in Santiago, Chile.</h4>
+							<a href="http://zooma.cl/">GO!</a>
+						</figcaption>
+					</figure>
+					<figure class="work__item">
+						<img class="img-responsive" src="assets/images/project-arisens.jpg">
+						<figcaption class="work__item_caption">
+							<h4>Industrial robotic solutions for industries 4.0</h4>
+							<a href="https://www.arisens.cl/">GO!</a>
+						</figcaption>
+					</figure>
+					<figure class="work__item">
+						<img class="img-responsive" src="assets/images/project-vectrum.jpg">
+						<figcaption class="work__item_caption">
+							<h4>Water control systems for industries and housing</h4>
+							<a href="http://vectrum.cl/">GO!</a>
+						</figcaption>
+					</figure> -->
+				</div>
+			</div>
+			<div class="row work__cat" id="photography">
+				<div class="work__label">
+					<h4>photography / portraiture</h4>
+				</div>
+				<div class="col-sm-offset-1 col-sm-10">
+					<div id="photo__grid">
+					  <div class="grid-sizer"></div>
+					  <div class="photo__grid_item">
+					  	<img class="img-responsive" src="assets/images/photo-1.jpg">
+					  </div>
+					  <div class="photo__grid_item">
+					  	<img class="img-responsive" src="assets/images/photo-2.jpg">
+					  </div>
+					  <div class="photo__grid_item">
+					  	<img class="img-responsive" src="assets/images/photo-12.jpg">
+					  </div>
+					  <div class="photo__grid_item">
+					  	<img class="img-responsive" src="assets/images/photo-3.jpg">
+					  </div>
+					  <div class="photo__grid_item">
+					  	<img class="img-responsive" src="assets/images/photo-4.jpg">
+					  </div>
+					  <div class="photo__grid_item">
+					  	<img class="img-responsive" src="assets/images/photo-11.jpg">
+					  </div>
+					  <div class="photo__grid_item">
+					  	<img class="img-responsive" src="assets/images/photo-5.jpg">
+					  </div>
+					  <div class="photo__grid_item">
+					  	<img class="img-responsive" src="assets/images/photo-6.jpg">
+					  </div>
+					  <div class="photo__grid_item">
+					  	<img class="img-responsive" src="assets/images/photo-7.jpg">
+					  </div>
+					  <div class="photo__grid_item">
+					  	<img class="img-responsive" src="assets/images/photo-8.jpg">
+					  </div>
+					  <div class="photo__grid_item">
+					  	<img class="img-responsive" src="assets/images/photo-9.jpg">
+					  </div>
+					  <div class="photo__grid_item">
+					  	<img class="img-responsive" src="assets/images/photo-10.jpg">
+					  </div>
+					</div>
+				</div>
+			</div>	
+		</section>
 </div>
 
 <?php get_footer() ?>
