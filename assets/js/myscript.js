@@ -197,7 +197,6 @@
 		}
 		if ( $(window).scrollTop() >= contact.top ) {
 			$(square).children('h3').text('C');
-			$(square).removeClass().addClass('corner__square-yellow');
 			$(menu).children('li:nth-child(4)').children('a').removeClass('active');
 			$(menu).children('li:nth-child(5)').children('a').addClass('active');
 		}

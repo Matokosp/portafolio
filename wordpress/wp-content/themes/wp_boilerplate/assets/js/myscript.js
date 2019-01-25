@@ -218,7 +218,7 @@
 
 	var api_data = {
     url:  'https://openlibrary.org/api/books?bibkeys=',
-    code: 'ISBN:9781784971571',
+    code: 'ISBN:' + book.isbn,
     tipo: '&jscmd=data',
     json: '&format=json'
 	}

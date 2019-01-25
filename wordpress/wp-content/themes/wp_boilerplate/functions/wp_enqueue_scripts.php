@@ -58,9 +58,11 @@ function dl_enqueue_scripts() {
 	wp_enqueue_script( 'myscript' );
 
 	wp_localize_script ( 'myscript', 'book', array(
-		'isbn' => 'thefield'
+		'isbn' => get_field('book_isbn')
 	));
 
 }
 
 add_action( 'wp_enqueue_scripts', 'dl_enqueue_scripts' );
+
+

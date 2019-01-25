@@ -19,5 +19,5 @@ global $is_edge;
 global $is_IE;
 
 if ( $is_safari || $is_chrome ) {
-	// add_filter( 'show_admin_bar', '__return_false' );
+	add_filter( 'show_admin_bar', '__return_false' );
 }

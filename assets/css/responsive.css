@@ -209,10 +209,6 @@ body {
 
 /*CONTACT*/
 
-.content-04 {
-  height: calc(var(--vh, 1vh) * 120);
-}
-
 }
 
 @media (min-width: 1440px) {
