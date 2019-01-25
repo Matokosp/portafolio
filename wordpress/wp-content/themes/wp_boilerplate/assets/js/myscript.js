@@ -214,31 +214,43 @@
 
 
 	// BOOK API
-	
+
+
 	var api_data = {
-		url: 'https://openlibrary.org/api/books?bibkeys=ISBN:',
-		code: '9781784971571',
-		tipo: '&jscmd=data'
+    url:  'https://openlibrary.org/api/books?bibkeys=',
+    code: 'ISBN:9781784971571',
+    tipo: '&jscmd=data',
+    json: '&format=json'
 	}
 
-
-	var bookTitle = '';
-	var bookAuthor = '';
-	var bookCover = '';
-	var title = $('book__section').children('h5');
-	var author = $('book__section').children('p');
-	var cover = $('book__section').children('img');
+	var object = ''
+	var bookTitle = ''
+	var bookAuthor = ''
+	var bookCover = ''
+	var title = $('.book__section').children('h5');
+	var author = $('.book__section').children('p');
+	var cover = $('.book__section').children('img');
 
 	$.ajax ({
-		url: api_data.url + api_data.code +'&format=json'+ api_data.tipo,
-		type: 'GET',
-		dataType: 'jsonp'
+	    url: api_data.url + api_data.code + api_data.json + api_data.tipo,
+	    type: 'GET',
+	    dataType: 'json'
+
 	}).done(function (data) {
-		bookTitle = data[0];
-		console.log(data);
-		console.log(bookTitle);
+		object = (data[api_data.code]);
+		bookTitle = (object.title);
+		bookAuthor = (object.authors[0].name);
+		bookCover = (object.cover.large)
+
+		title.text(bookTitle);
+		author.text(bookAuthor);
+		cover.attr('src', bookCover);
+
+	    console.log(data[api_data.code])
+	    console.log(title)
 	})
 
+	
 	
 
 

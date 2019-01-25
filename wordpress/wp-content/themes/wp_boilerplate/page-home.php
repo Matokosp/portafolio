@@ -331,9 +331,9 @@ get_header() ?>
 	        <div class="my__misc row">
 	        	<div class="book__section col-sm-offset-1 col-sm-3">
 	        		<h4>currently reading</h4>
-	        		<h5><!-- The Three Body Problem --></h5>
-	        		<p><!-- by Cixin Liu --></p>
-	        		<img src="assets/images/cover-1.jpg">
+	        		<h5></h5>
+	        		<p></p>
+	        		<img src="">
 	        	</div>
 	        	<div class="favorite__cafe col-sm-offset-1 col-sm-6">
 	        		<h4>my current favorite <br> cafe / office</h4>
