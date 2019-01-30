@@ -10,9 +10,9 @@ https://matiassalinas.com
 ### Phorography: Masonry de algunos de mis trabajos en fotografía de retratos
 ### Contact: Formulario de contacto multistep, acompañado de una sección "currently reading" la cual utiliza una API para buscar información de libros a partir de su código ISBN, y también una sección que muestra mi café favorito dentro de la ciudad ( todo esto editable mediante wordpress )
 
-<!-- #### A continuación dejo los datos necesarios para poder acceder al WP de mi sitio. Como pueden ver, el sitio está subido a la red dentro de un hosting real, confiando en la correcta utilización de éstos para la evaluación del proyecto.
+#### A continuación dejo los datos necesarios para poder acceder al WP de mi sitio. Como pueden ver, el sitio está subido a la red dentro de un hosting real, confiando en la correcta utilización de éstos para la evaluación del proyecto.
 
 ## Wordpress:
 
-### username : 
-### password :  -->
+### username : user2
+### password : usuario2clave
